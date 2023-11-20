@@ -1,4 +1,4 @@
-[Core Synthetic Data Platform Site](https://dev.azure.com/SyntheticDataPlatform/_git/SyntheticDataPlatform-Intro/README.md)
+[Core Synthetic Data Platform Site](https://github.com/SyntheticDataPlatform/.github/blob/main/profile/README.md)
 
 # DataSynthesis Loading Seeded Data
 The easiest thing we could have done is make this a complete SaaS based offering. We are cognizant of the potential for
