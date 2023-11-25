@@ -26,7 +26,7 @@ SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./Platform/platform_config_data
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./DataModel/datamodel_domain.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./DataModel/datamodel_datatables.sql
 -- DataExisting
-SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./DataExisting/dataexisting_ababanking.sql
+SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./InsertScripts-999Records/DataExisting/dataexisting_ababanking.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./DataExisting/dataexisting_areacode.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./DataExisting/dataexisting_companies.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ./DataExisting/dataexisting_namefirst_1.sql
