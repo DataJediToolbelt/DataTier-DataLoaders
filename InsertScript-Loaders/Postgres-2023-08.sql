@@ -51,4 +51,5 @@ psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./DataGenerated/datage
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./DataGenerated/datagenerated_ein.sql
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./DataGenerated/datagenerated_phonenumbers.sql
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./DataGenerated/datagenerated_serialnumbers.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./DataGenerated/datagenerated_socialsecuritynumber.sql
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./DataGenerated/datagenerated_useridentities.sql
