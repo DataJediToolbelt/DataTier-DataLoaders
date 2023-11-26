@@ -41,8 +41,7 @@ SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/Dat
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_creditcard.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_dateofbirth.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_devices.sql
-SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_driverslicenses_1.sql
-SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_driverslicenses_2.sql
+SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_driverslicenses.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_ein.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_phonenumbers.sql
 SQLCMD -S SERVERNAME -U sa -P St0rangPa55w0rd -i ../InsertScripts-999Records/DataGenerated/datagenerated_serialnumbers.sql
