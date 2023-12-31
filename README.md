@@ -13,8 +13,8 @@ is not our primary data tier technology.
 
 | Database Technology                                                  | Version Details                                                | 
 |----------------------------------------------------------------------|----------------------------------------------------------------|
-| [Jupyter Notebooks](./JupyterNotebooks/README.md) | SQL Server 2016 including Azure SQL and above have been tested |
-| [Insert Scripts](InsertScripts-GenericSQL/README.md)       | v10 and above have been tested                                 |
+| [Jupyter Notebooks](Legacy/JupyterNotebooks/README.md) | SQL Server 2016 including Azure SQL and above have been tested |
+| [Insert Scripts](Legacy/InsertScripts-GenericSQL/README.md)       | v10 and above have been tested                                 |
 
 
 Happy coding!!!

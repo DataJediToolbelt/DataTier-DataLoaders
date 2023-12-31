@@ -1,4 +1,0 @@
-SET dbHost=localhost
-SET uName=sa
-SET pWD=Pwd
-SET dbName=DataSynthesis
