@@ -4,7 +4,7 @@ INSERT INTO datamodel_domain (domainname,domaininformation,statusid,createddate)
        ('platform','Platform data used globally within the platform',1,'2021-08-25 16:23:37.000'),
        ('terms','Terminologies - consider base for platform',1,'2021-08-25 16:23:37.000'),
        ('datamodel','Attempts to have details on the database within the database itself',1,'2021-08-25 16:21:49.000');
-INSERT INTO datamodel_datatables (tablename,tableinformation,statusid,createddate,"domain")
+INSERT INTO datamodel_datatables (tablename,tableinformation,statusid,createddate,datadomain)
 VALUES ('databuilt_datastructures','Data Built from Platform Defined Data Structures',1,'2020-08-04 22:18:04.000','databuilt'),
        ('datatier','Data used by the platform that can help process user requests for synthetic data needs',1,'2020-08-04 22:18:04.000','datagenerated'),
        ('datamodel_datatables','This table for data model details and explanations',1,'2020-08-04 22:18:04.000','datamodel'),
