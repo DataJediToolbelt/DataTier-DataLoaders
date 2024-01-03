@@ -1,7 +1,7 @@
-INSERT INTO refdata_status (StatusDescription,CreatedDate,CreatedUser) VALUES 
-('Active','2020-07-21 01:12:51.0',NULL)
-,('Inactive','2020-07-21 01:12:51.0',NULL)
-,('Arcived','2020-07-21 01:12:51.0',NULL)
+INSERT INTO refdata_status (StatusID,StatusDescription,CreatedDate,CreatedUser) VALUES
+(1,'Active','2020-07-21 01:12:51.0',NULL)
+,(2,'Inactive','2020-07-21 01:12:51.0',NULL)
+,(3,'Archived','2020-07-21 01:12:51.0',NULL)
 ;
 INSERT INTO refdata_timezones (TimeZoneValue,TimeZoneDesc,CreatedDate,StatusID) VALUES
 ('CST','Central Timezone','2020-07-21 01:18:34.0',1)
@@ -64,8 +64,8 @@ INSERT INTO refdata_usstates (StateID,StateDescription,Lattitude,Longitude,Creat
 ,('WV','West Virginia','38.597626','-80.454903','2020-07-28 01:33:31.0',1,NULL)
 ,('WY','Wyoming','43.075968','-107.290284','2020-07-28 01:33:31.0',1,NULL)
 ;
-INSERT INTO refdata_vendor (VendorName,CreatedDate,StatusID,CreatedUser,VendorGUID) VALUES 
-('Synthetic Open Source Comm','2020-07-28 01:25:00.0',1,NULL,'10b47338-d09b-11ea-9579-bba61161b25a')
+INSERT INTO refdata_vendor (VendorID, VendorName,CreatedDate,StatusID,CreatedUser,VendorGUID) VALUES
+(1,'Synthetic Open Source Comm','2020-07-28 01:25:00.0',1,NULL,'10b47338-d09b-11ea-9579-bba61161b25a')
 ;
 INSERT INTO refdata_industrystd (IndustryStd,IndustryStdDesc,CreatedDate,StatusID) VALUES 
 ('EDI','EDI','2020-07-28 00:33:40.0',1)
@@ -74,18 +74,18 @@ INSERT INTO refdata_industrystd (IndustryStd,IndustryStdDesc,CreatedDate,StatusI
 ,('NCPDP','NCPDP','2020-07-28 00:33:40.0',1)
 ,('UNDF','Undefined','2020-07-28 00:33:40.0',1)
 ;
-INSERT INTO refdata_sensitivityflag (SensitiveFlagDesc,CreatedDate,StatusID) VALUES 
-('Undefined','2020-07-28 00:22:11.0',1)
-,('PHI','2020-07-28 00:22:11.0',1)
-,('PII','2020-07-28 00:22:11.0',1)
-,('Reference Data','2020-07-28 00:22:11.0',1)
-,('General Data','2020-07-28 00:22:11.0',1)
-,('N/A','2020-07-28 00:22:11.0',1)
+INSERT INTO refdata_sensitivityflag (SensitiveFlagID,SensitiveFlagDesc,CreatedDate,StatusID) VALUES
+(1,'Undefined','2020-07-28 00:22:11.0',1)
+,(2,'PHI','2020-07-28 00:22:11.0',1)
+,(3,'PII','2020-07-28 00:22:11.0',1)
+,(4,'Reference Data','2020-07-28 00:22:11.0',1)
+,(5,'General Data','2020-07-28 00:22:11.0',1)
+,(6,'N/A','2020-07-28 00:22:11.0',1)
 ;
 INSERT INTO refdata_codeset (CodeSetName,IndustryStd,StatusID,CreatedDate,CreatedUser,CodesetGUID,FieldMapping,SensitivityFlagID,ExternalTableID,ExternalNotes,ExternalLink) VALUES
-                                                                                                                                            ('Race','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.10',4,NULL,NULL,NULL),
-                                                                                                                                                                                               ('Language','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.15',4,NULL,NULL,NULL),
-                                                                                                                                                                                               ('Marital Status','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.16',4,NULL,NULL,NULL),
+       ('Race','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.10',4,NULL,NULL,NULL),
+       ('Language','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.15',4,NULL,NULL,NULL),
+       ('Marital Status','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.16',4,NULL,NULL,NULL),
                                                                                                                                                                                                ('Religous Affiliation','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.17',4,NULL,NULL,NULL),
                                                                                                                                                                                                ('Ethnicity','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.22',4,NULL,NULL,NULL),
                                                                                                                                                                                                ('Birth Country/Citizenship','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.26',4,NULL,NULL,NULL),
