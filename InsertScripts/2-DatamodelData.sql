@@ -6,7 +6,7 @@ INSERT INTO datamodel_domain (domainname,domaininformation,statusid,createddate)
        ('datamodel','Attempts to have details on the database within the database itself',1,'2021-08-25 16:21:49.000');
 INSERT INTO datamodel_datatables (tablename,tableinformation,statusid,createddate,datadomain)
 VALUES ('databuilt_datastructures','Data Built from Platform Defined Data Structures',1,'2020-08-04 22:18:04.000','databuilt'),
-       ('datatier','Data used by the platform that can help process user requests for synthetic data needs',1,'2020-08-04 22:18:04.000','datagenerated'),
+       ('datatier','Data used by the platform that can help process user requests for synthetic data needs',1,'2020-08-04 22:18:04.000',null),
        ('datamodel_datatables','This table for data model details and explanations',1,'2020-08-04 22:18:04.000','datamodel'),
        ('datamodel_domain','Reference for all domains within the database x_',1,'2021-08-25 15:37:45.000','datamodel'),
        ('datamodel_apis','API details for the platform',1,'2022-04-22 04:03:50.139','datamodel'),
@@ -14,7 +14,6 @@ VALUES ('databuilt_datastructures','Data Built from Platform Defined Data Struct
        ('platform_datageneration','Specific data generators the platform can do',1,'2021-08-25 15:26:19.000','refdata'),
        ('platform_datastructures','Data Structures Header Records',1,'2023-01-04 22:26:42.059','platform'),
        ('platform_datastructures_dtl','Data Structure Specific Attribute Details for the complete data structure',1,'2023-01-04 22:27:50.910','platform'),
-       ('platform_dataattributes','Platform Settings - Data Attributes in Platform (Data Existing and Data Generated Tables)',1,'2020-08-04 22:18:04.000','platform'),
        ('refdata_application','Implementation Specific Applications ',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_codeset','Platform Reference Data - Codesets Supported within Platform',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_codesets_crossmaps','Impl Specific CrossMaps of terms with specific details',1,'2021-02-07 03:04:57.000','refdata'),
@@ -39,3 +38,4 @@ VALUES ('databuilt_datastructures','Data Built from Platform Defined Data Struct
        ('refdata_vendor','Platform Reference Data - Vendors',1,'2020-08-04 22:18:04.000','refdata'),
        ('terms_umls_mrconso','Loaded UMLS MrConso Data Files of 16.xM terms',1,'2021-08-25 15:34:04.000','terms'),
        ('terms_codeset_industrystd','Specific Terminologies ONLY Intended for HL7v2 standard terms',1,'2021-08-25 15:28:27.000','terms');
+
