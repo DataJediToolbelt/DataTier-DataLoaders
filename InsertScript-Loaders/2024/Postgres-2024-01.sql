@@ -10,3 +10,12 @@ psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./2-DatamodelData.sql
 -- Platform
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./3-PlatformData.sql
 -- DataTier
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./5-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./6-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./7-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./8-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./9-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./10-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./11-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./12-DataTier.sql

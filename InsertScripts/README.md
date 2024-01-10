@@ -1,6 +1,6 @@
 [Core Synthetic Data Platform Site](https://dev.azure.com/SyntheticDataPlatform/_git/SyntheticDataPlatform-Intro/README.md)
 
-# DataSynthesis Loading Seeded Data
+# Loading Seeded Data
 The easiest thing we could have done is make this a complete SaaS based offering. We are cognizant of the potential for
 partners to build out potential services offering down the road. We also want to ensure that organizations can
 have control of the data. For the first 12-16 months the backend database was MySQL, as we have evolved we have focused 
