@@ -4,7 +4,7 @@ export PGPASSWORD='<password>'
 # /Library/PostgreSQL/14/bin/psql h localhost -U postgres -d datasynthesis -p 5432 -f file.sql
 # psql h localhost -U postgres -d datasynthesis -p 5432 -f file.sql
 
-# Windows 
+# Windows
 # Setting Password file: https://www.postgresql.org/docs/current/libpq-pgpass.html
 # Run and Respond with Password
 # "C:\Program Files\PostgreSQL\13\bin\psql.exe" -h localhost -U postgres -d datasynthesis -p 5432 -f ./ReferenceData/1-refdata_status.sql
@@ -26,6 +26,3 @@ psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./6-DataTier.sql
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./7-DataTier.sql
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./8-DataTier.sql
 psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./9-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./10-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./11-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./12-DataTier.sql

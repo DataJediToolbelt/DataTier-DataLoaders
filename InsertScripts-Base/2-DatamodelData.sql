@@ -14,7 +14,6 @@ VALUES ('databuilt_datastructures','Data Built from Platform Defined Data Struct
        ('platform_datageneration','Specific data generators the platform can do',1,'2021-08-25 15:26:19.000','refdata'),
        ('platform_datastructures','Data Structures Header Records',1,'2023-01-04 22:26:42.059','platform'),
        ('platform_datastructures_dtl','Data Structure Specific Attribute Details for the complete data structure',1,'2023-01-04 22:27:50.910','platform'),
-       ('platform_dataattributes','Platform Settings - Data Attributes in Platform (Data Existing and Data Generated Tables)',1,'2020-08-04 22:18:04.000','platform'),
        ('refdata_application','Implementation Specific Applications ',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_codeset','Platform Reference Data - Codesets Supported within Platform',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_codesets_crossmaps','Impl Specific CrossMaps of terms with specific details',1,'2021-02-07 03:04:57.000','refdata'),
