@@ -11,18 +11,16 @@ export PGPASSWORD='<password>'
 # "C:\Program Files\PostgreSQL\16\bin\psql.exe" -h localhost -U postgres -d datasynthesis -p 5432 -f ./ReferenceData/1-refdata_status.sql
 # Setting Path is easiest for commands
 
-
-
 -- Reference Data
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./1-ReferenceData.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./1-ReferenceData-Generic.sql
 -- Data Models
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./2-DatamodelData.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./2-DatamodelData-Generic.sql
 -- Platform
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./3-PlatformData.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./3-PlatformData-Generic.sql
 -- DataTier
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./5-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./6-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./7-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./8-DataTier.sql
-psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./9-DataTier.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-Datatier-Pt1-Generic.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-Datatier-Pt2-Generic.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-Datatier-Pt3-Generic.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-Datatier-Pt4-Generic.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-Datatier-Pt5-Generic.sql
+psql -h localhost -U postgres -d datasynthesis -p 5432 -f ./4-Datatier-Pt6-Generic.sql
