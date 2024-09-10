@@ -7,7 +7,7 @@ have control of the data. For the first 12-16 months the backend database was My
 on Postgres. All of these scripts have been built around Postgres as our primary backe end data tier. Active work 
 is going on with other data tiers as well but the prodominant data tier is Postgres.
 
-## PostgresQL
+## PostgreSQL
 This section is specific to the PostgresQL.
 
 ### Pre-Requisites
@@ -64,7 +64,7 @@ open source offerings are cutting into their business and they need a way to exp
 capabilities with no cost. 
 
 For all SQL Server data loading you can look in the InsertScripts-Base directory and run the specific scripts
-than end with SQLServer for each numbered item (1 to 4), if there is no specific -SQLServer file then run the -Geneeic
-script.
+that end with <filename>-SQLServer for each numbered item (1 to 4), if there is no specific <filename>-SQLServer file 
+then run the <filename>-Generic script.
 
 Happy coding!!!
