@@ -23,7 +23,8 @@ INSERT INTO platform_dataattributes (platformdataattributesid,dataattributename,
       (21,'Serial Numbers',6,'2022-06-02 13:59:20.860',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
       (22,'Regular Expression Based Data',3,'2023-01-18 23:51:30.423',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
       (23,'Professions',3,'2023-01-19 10:06:59.813',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
-      (24,'Devices',3,'2023-12-31 04:21:49.731',1,'NULL','NULL ','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator');
+      (24,'Devices',3,'2023-12-31 04:21:49.731',1,'NULL','NULL ','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator')
+;
 SET IDENTITY_INSERT platform_dataattributes OFF;
 
 SET IDENTITY_INSERT platform_datageneration ON;
@@ -87,7 +88,7 @@ INSERT INTO platform_datageneration (DataGenTypeID,DataGenTypeDescription,Defini
 	 (57,'Mixed','^[A-Z]{2}[%#@&]{1}[0-9]{5}[A-Z]{1}$',14,'2021-05-24 19:48:21',1,NULL),
 	 (58,'Peoples Bank','^[0-9]{10}$',7,'2021-05-24 19:48:21',1,NULL),
 	 (59,'Cadeceus','^[%#@&]{1}[A-Z]{3}[%#@&]{1}[0-9]{1}[A-Z]{2}$',15,'2021-05-24 19:48:21',1,NULL)
-     ;
+;
 SET IDENTITY_INSERT platform_datageneration OFF;
 
 SET IDENTITY_INSERT platform_datastructures ON;
@@ -96,12 +97,12 @@ INSERT INTO platform_datastructures (platformdatastructuresid,datastructurename,
       (2,'Bank Account',2,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (3,'US Phone Number',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (4,'Complete Name',3,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
-      (5,'US Address',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL);
+      (5,'US Address',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL)
+;
 SET IDENTITY_INSERT platform_datastructures OFF;
 
 SET IDENTITY_INSERT platform_datastructures_dtl ON;
-INSERT INTO platform_datastructures_dtl (platformdatastructuresdtlid,platformdatastructuresid,compositedatastructurename,sensitivityflagid,createddate,statusid,createduser,platformdatastructurestodataattributesguid,registeredapp,platformdataattributesid)
-VALUES (1,1,NULL,1,'2021-03-29 11:41:11.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',1),
+INSERT INTO platform_datastructures_dtl (platformdatastructuresdtlid,platformdatastructuresid,compositedatastructurename,sensitivityflagid,createddate,statusid,createduser,platformdatastructurestodataattributesguid,registeredapp,platformdataattributesid) VALUES (1,1,NULL,1,'2021-03-29 11:41:11.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',1),
        (2,1,NULL,1,'2021-03-29 11:41:11.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',18),
        (3,2,NULL,1,'2021-03-29 11:44:41.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',16),
        (4,2,NULL,1,'2021-03-29 11:44:41.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',7),
@@ -117,5 +118,6 @@ VALUES (1,1,NULL,1,'2021-03-29 11:41:11.000',1,NULL,NULL,'16a17a48-d09b-11ea-957
        (14,1,NULL,1,'2021-12-26 07:51:59.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',5),
        (15,1,NULL,1,'2021-12-26 07:51:59.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',8),
        (16,1,NULL,1,'2021-12-26 07:53:10.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',9),
-       (17,1,NULL,1,'2021-12-26 07:53:10.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',10);
+       (17,1,NULL,1,'2021-12-26 07:53:10.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',10)
+;
 SET IDENTITY_INSERT platform_datastructures_dtl OFF;
