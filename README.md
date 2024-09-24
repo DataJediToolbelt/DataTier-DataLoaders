@@ -14,13 +14,13 @@ occur as there are implementation issues that are discovered.
 The place to start for almost all efforts is the /InsertScript-Loaders directory to look at how we have designed the Postgres
 implementations to load data.
 
-| Database Technology      | Version Details                                                                                                                                           | 
-|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Insert Scripts-Loaders   | PostgresQL centric but provides the order in which files should be loaded based on implementation.                                                        |
-| Insert Scripts           | Standard SQL Insert scripts to seed database, there is a README.md in this directory with some helpful database commands and details if needed.           |
-| Insert Scripts-CSV       | These are CSV scripts than have been used with Snowflake and SPARK. However, for them to work the tables must be implemented as is or they will not work. |
-| Legacy                   | Old Historical dataloaders, these will eventually be eliminated in 2024 as we have moved to a new data model.                                             |
-| SQL                      | Some common SQL statements for helping with the platform                                                                                                  |
+| Directory              | Details                                                                                                                                                  | 
+|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Insert Scripts-Loaders | PostgreSQL but provides the order in which files should be loaded based on implementation.                                                        |
+| Insert Scripts-Base    | Standard SQL Insert scripts to seed database, there is a README.md in this directory with some helpful database commands and details if needed.          |
+| Insert Scripts-CSV     | These are CSV scripts than have been used with Snowflake and SPARK. However, for them to work the tables must be implemented as is or they will not work. |
+| Legacy                 | Old Historical dataloaders, these will eventually be eliminated in 2024 as we have moved to a new data model.                                            |
+| SQL                    | Some common SQL statements for helping with the platform                                                                                                 |
 
 
 Happy coding!!!
