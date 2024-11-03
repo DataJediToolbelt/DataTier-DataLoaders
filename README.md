@@ -27,7 +27,7 @@ implementations to load data.
 | Insert Scripts-Base    | Standard SQL Insert scripts to seed database, there is a README.md in this directory with some helpful database commands and details if needed.           |
 | Insert Scripts-CSV     | These are CSV scripts than have been used with Snowflake and SPARK. However, for them to work the tables must be implemented as is or they will not work. |
 | Legacy                 | Old Historical dataloaders, these will eventually be eliminated in 2024 as we have moved to a new data model.                                             |
-| SQL                    | Some common SQL statements for helping with the platform                                                                                                  |
+| SQL                    | Jupyter notebooks of key platform queries or technology statements that might be beneficial. |
 
 
 Happy coding!!!
