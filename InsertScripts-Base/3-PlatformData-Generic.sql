@@ -1,4 +1,4 @@
-INSERT INTO platform_dataattributes (platformdataattributesid,dataattributename,sensitivityflagid,createddate,statusid,createduser,platformdataattributeguid,registeredapp,attributetype) VALUES
+INSERT INTO platform_dataattributes (platformdataattributes_id, dataattribute_name, sensitivityflag_id, created_date, status_id, created_user, platformdataattribute_guid, registered_app, attributetype) VALUES
       (1,'Names - Last',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Upsert'),
       (2,'Area Code',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
       (3,'Address',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
@@ -24,7 +24,7 @@ INSERT INTO platform_dataattributes (platformdataattributesid,dataattributename,
       (23,'Professions',3,'2023-01-19 10:06:59.813',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
       (24,'Devices',3,'2023-12-31 04:21:49.731',1,'NULL','NULL ','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator')
 ;
-INSERT INTO platform_datageneration (DataGenTypeID,DataGenTypeDescription,Definition,DataAttributeID,CreatedDate,StatusID,CreatedUser,quantity,maxrecordsinsource,organizationguid,registeredapp) VALUES
+INSERT INTO platform_datageneration (datagentype_id, datagentype_description, definition, dataattribute_id, created_date, status_id, created_user, quantity, maxrecordsinsource, registered_app, organization_guid) VALUES
      (1,'Master','^5[1-5][0-9]{14}$',6,'2021-05-24 19:48:20',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 (2,'Visa','^4[0-9]{12}(?:[0-9]{3})?$',6,'2021-05-24 19:48:20',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 (3,'Discover','^65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})$',6,'2021-05-24 19:48:20',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
@@ -85,14 +85,14 @@ INSERT INTO platform_datageneration (DataGenTypeID,DataGenTypeDescription,Defini
 	 (58,'Peoples Bank','^[0-9]{10}$',7,'2021-05-24 19:48:21',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 (59,'Cadeceus','^[%#@&]{1}[A-Z]{3}[%#@&]{1}[0-9]{1}[A-Z]{2}$',15,'2021-05-24 19:48:21',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a ')
 ;
-INSERT INTO platform_datastructures (platformdatastructuresid,datastructurename,sensitivityflagid,createddate,statusid,createduser,platformdatastructuresguid,registeredapp) VALUES
+INSERT INTO platform_datastructures (platformdatastructures_id, datastructure_name, sensitivityflag_id, created_date, status_id, created_user, platformdatastructures_guid, registered_app) VALUES
       (1,'Person Demographics',2,'2021-03-29 11:23:43.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (2,'Bank Account',2,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (3,'US Phone Number',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (4,'Complete Name',3,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (5,'US Address',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL)
 ;
-INSERT INTO platform_datastructures_dtl (platformdatastructuresdtlid,platformdatastructuresid,compositedatastructurename,sensitivityflagid,createddate,statusid,createduser,platformdatastructurestodataattributesguid,registeredapp,platformdataattributesid)
+INSERT INTO platform_datastructures_dtl (platformdatastructuresdtl_id, platformdatastructures_id, compositedatastructure_name, sensitivityflag_id, created_date, status_id, created_user, platformdatastructures_to_dataattributes_guid, registered_app, platformdataattributes_id)
 VALUES (1,1,NULL,1,'2021-03-29 11:41:11.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',1),
        (2,1,NULL,1,'2021-03-29 11:41:11.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',18),
        (3,2,NULL,1,'2021-03-29 11:44:41.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',16),

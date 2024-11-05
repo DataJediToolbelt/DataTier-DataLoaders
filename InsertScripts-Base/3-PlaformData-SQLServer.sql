@@ -1,5 +1,5 @@
 SET IDENTITY_INSERT platform_dataattributes ON;
-INSERT INTO platform_dataattributes (platformdataattributesid,dataattributename,sensitivityflagid,createddate,statusid,createduser,platformdataattributeguid,registeredapp,attributetype) VALUES
+INSERT INTO platform_dataattributes (platformdataattributes_id, dataattribute_name, sensitivityflag_id, created_date, status_id, created_user, platformdataattribute_guid, registered_app, attributetype) VALUES
       (1,'Names - Last',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Upsert'),
       (2,'Area Code',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
       (3,'Address',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
@@ -28,7 +28,7 @@ INSERT INTO platform_dataattributes (platformdataattributesid,dataattributename,
 SET IDENTITY_INSERT platform_dataattributes OFF;
 
 SET IDENTITY_INSERT platform_datageneration ON;
-INSERT INTO platform_datageneration (DataGenTypeID,DataGenTypeDescription,Definition,DataAttributeID,CreatedDate,StatusID,CreatedUser,quantity,maxrecordsinsource,organizationguid,registeredapp) VALUES
+INSERT INTO platform_datageneration (datagentype_id, datagentype_description, definition, dataattribute_id, created_date, status_id, created_user, quantity, maxrecordsinsource, registered_app, organization_guid) VALUES
      (1,'Master','^5[1-5][0-9]{14}$',6,'2021-05-24 19:48:20',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 (2,'Visa','^4[0-9]{12}(?:[0-9]{3})?$',6,'2021-05-24 19:48:20',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 (3,'Discover','^65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})$',6,'2021-05-24 19:48:20',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
@@ -92,7 +92,7 @@ INSERT INTO platform_datageneration (DataGenTypeID,DataGenTypeDescription,Defini
 SET IDENTITY_INSERT platform_datageneration OFF;
 
 SET IDENTITY_INSERT platform_datastructures ON;
-INSERT INTO platform_datastructures (platformdatastructuresid,datastructurename,sensitivityflagid,createddate,statusid,createduser,platformdatastructuresguid,registeredapp) VALUES
+INSERT INTO platform_datastructures (platformdatastructures_id, datastructure_name, sensitivityflag_id, created_date, status_id, created_user, platformdatastructures_guid, registered_app) VALUES
       (1,'Person Demographics',2,'2021-03-29 11:23:43.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (2,'Bank Account',2,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (3,'US Phone Number',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
