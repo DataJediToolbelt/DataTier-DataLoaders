@@ -96,7 +96,7 @@ INSERT INTO refdata_sensitivityflag (sensitiveflag_id, sensitiveflag_desc, creat
 ;
 SET IDENTITY_INSERT refdata_sensitivityflag OFF;
 
-INSERT INTO refdata_codeset (codesets_id, codeset_name, industry_std, status_id, created_date, created_user, codeset_guid, field_mapping, sensitivityflag_id, externaltable_id, external_notes, external_link) VALUES
+INSERT INTO refdata_codeset (codeset_name, industry_std, status_id, created_date, created_user, codeset_guid, field_mapping, sensitivityflag_id, externaltable_id, external_notes, external_link) VALUES
        ('Race','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.10',4,NULL,NULL,NULL),
        ('Language','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.15',4,NULL,NULL,NULL),
        ('Marital Status','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.16',4,NULL,NULL,NULL),

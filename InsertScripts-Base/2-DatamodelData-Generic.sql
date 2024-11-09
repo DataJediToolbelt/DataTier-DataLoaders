@@ -1,15 +1,15 @@
-INSERT INTO datamodel_domain (domainname,domaininformation,statusid,createddate) VALUES
+INSERT INTO datamodel_domain (domainname,domaininformation,status_id,created_date) VALUES
        ('refdata','Reference Tables that provided support for the platform',1,'2021-08-25 16:23:37.000'),
        ('datatier','DataTiers are key tables that provide specific main platform capabilities',1,'2021-08-25 16:20:24.000'),
        ('platform','Platform data used globally within the platform',1,'2021-08-25 16:23:37.000'),
        ('terms','Terminologies - data available within the platform',1,'2021-08-25 16:23:37.000'),
        ('datamodel','Database platform defintiions - tables, domains',1,'2021-08-25 16:21:49.000')
 ;
-INSERT INTO datamodel_datatables (tablename,tableinformation,statusid,createddate,datadomain) VALUES
-       ('datatier_sdp_datastructures','Data Built from Platform Defined Data Structures',1,'2020-08-04 22:18:04.000','databuilt'),
-       ('datatier_sdp_dataattributes','Data used by the platform that can help process user requests for synthetic data needs',1,'2020-08-04 22:18:04.000',null),
-       ('datatier_crawler','Data crawler data persisted in the platform',1,'2020-08-04 22:18:04.000',null),
-       ('datatier_tokens','Data tokens built by the platform',1,'2020-08-04 22:18:04.000',null),
+INSERT INTO datamodel_datatables (tablename,tableinformation,status_id,created_date,datadomain) VALUES
+       ('datatier_sdp_datastructures','Data Built from Platform Defined Data Structures',1,'2020-08-04 22:18:04.000','datatier'),
+       ('datatier_sdp_dataattributes','Data used by the platform that can help process user requests for synthetic data needs',1,'2020-08-04 22:18:04.000','datatier'),
+       ('datatier_crawler','Data crawler data persisted in the platform',1,'2020-08-04 22:18:04.000','datatier'),
+       ('datatier_tokens','Data tokens built by the platform',1,'2020-08-04 22:18:04.000','datatier'),
        ('datamodel_datatables','This table for data model details and explanations',1,'2020-08-04 22:18:04.000','datamodel'),
        ('datamodel_domain','Reference for all domains within the database x_',1,'2021-08-25 15:37:45.000','datamodel'),
        ('datamodel_apis','API details for the platform',1,'2022-04-22 04:03:50.139','datamodel'),
@@ -21,7 +21,7 @@ INSERT INTO datamodel_datatables (tablename,tableinformation,statusid,createddat
        ('platform_xmap_tokens_attributes_dtl','Crossmapping of data attributes to a specific data source. This is the ONLY details we store for token reference',1,'2023-01-04 22:27:50.910','platform'),
        ('refdata_application','Implementation Specific Applications ',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_codeset','Platform Reference Data - Codesets Supported within Platform',1,'2020-08-04 22:18:04.000','refdata'),
-       ('refdata_codesets_crossmaps','Impl Specific CrossMaps of terms with specific details',1,'2021-02-07 03:04:57.000','refdata'),
+       ('platform_codesets_crossmaps','Impl Specific CrossMaps of terms with specific details',1,'2021-02-07 03:04:57.000','platform'),
        ('refdata_countries','Platform Reference Data - Countries',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_devicetypes','Different Types of devices',1,'2023-01-04 22:36:20.777','refdata'),
        ('refdata_industries','Industries Supported By Platform',1,'2022-05-29 06:06:05.894','refdata'),
