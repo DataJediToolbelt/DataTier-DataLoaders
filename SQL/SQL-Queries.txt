@@ -1,0 +1,4 @@
+select distinct dataattribute_id, datagentype_id,count(*)
+from datatier_sdp_dataattributes
+group by dataattribute_id, datagentype_id
+order by dataattribute_id, datagentype_id

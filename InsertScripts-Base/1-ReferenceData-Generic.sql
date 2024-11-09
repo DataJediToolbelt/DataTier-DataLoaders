@@ -1,17 +1,17 @@
-INSERT INTO refdata_status (StatusID,StatusDescription,CreatedDate,CreatedUser) VALUES
+INSERT INTO refdata_status(status_id, status_description, created_date, created_user) VALUES
     (1,'Active','2020-07-21 01:12:51.0',NULL)
     ,(2,'Inactive','2020-07-21 01:12:51.0',NULL)
     ,(3,'Archived','2020-07-21 01:12:51.0',NULL)
     ,(4,'Undefined','2020-07-21 01:12:51.0',NULL)
 ;
-INSERT INTO refdata_timezones (TimeZoneValue,TimeZoneDesc,CreatedDate,StatusID) VALUES
+INSERT INTO refdata_timezones (timezone_value, timezone_desc, created_date, status_id) VALUES
     ('CST','Central Timezone','2020-07-21 01:18:34.0',1)
     ,('EST','Eastern Timezone','2020-07-21 01:18:34.0',1)
-    ,('MST','Moutain Timezone','2020-07-21 01:18:34.0',1)
+    ,('MST','Mountain Timezone','2020-07-21 01:18:34.0',1)
     ,('PST','Pacific Timezone','2020-07-21 01:18:34.0',1)
     ,('UNK','Unknown','2020-07-21 01:18:34.0',1)
 ;
-INSERT INTO refdata_usstates (StateID,StateDescription,Lattitude,Longitude,CreatedDate,StatusID,CreatedUser) VALUES 
+INSERT INTO refdata_usstates (state_id, state_description, lattitude, longitude, created_date, status_id, created_user) VALUES
     ('AK','Alaska','63.588753','-154.493062','2020-07-28 01:33:31.0',1,NULL)
     ,('AL','Alabama','32.318231','-86.902298','2020-07-28 01:33:31.0',1,NULL)
     ,('AR','Arkansas','35.20105','-91.831833','2020-07-28 01:33:31.0',1,NULL)
@@ -65,18 +65,18 @@ INSERT INTO refdata_usstates (StateID,StateDescription,Lattitude,Longitude,Creat
     ,('WV','West Virginia','38.597626','-80.454903','2020-07-28 01:33:31.0',1,NULL)
     ,('WY','Wyoming','43.075968','-107.290284','2020-07-28 01:33:31.0',1,NULL)
 ;
-INSERT INTO refdata_vendor (VendorID, VendorName,CreatedDate,StatusID,CreatedUser,VendorGUID) VALUES
+INSERT INTO refdata_vendor (vendor_id, vendor_name, created_date, status_id, created_user, vendor_guid) VALUES
     (1,'Synthetic Open Source Comm','2020-07-28 01:25:00.0',1,NULL,'10b47338-d09b-11ea-9579-bba61161b25a')
     ,(2,'Undefined Vendor','2024-09-08 01:25:00.0',1,NULL,'38ff825c-a58d-4d83-8984-5cc4504f4268')
 ;
-INSERT INTO refdata_industrystd (IndustryStd,IndustryStdDesc,CreatedDate,StatusID) VALUES 
+INSERT INTO refdata_industrystd (industry_std, industrystd_desc, created_date, status_id) VALUES
     ('EDI','EDI','2020-07-28 00:33:40.0',1)
     ,('FHIR','HL7 FHIR','2020-07-28 00:33:40.0',1)
     ,('HL7','HL7 v2','2020-07-28 00:33:40.0',1)
     ,('NCPDP','NCPDP','2020-07-28 00:33:40.0',1)
     ,('UNDF','Undefined','2020-07-28 00:33:40.0',1)
 ;
-INSERT INTO refdata_sensitivityflag (SensitiveFlagID,SensitiveFlagDesc,CreatedDate,StatusID) VALUES
+INSERT INTO refdata_sensitivityflag (sensitiveflag_id, sensitiveflag_desc, created_date, status_id) VALUES
     (1,'Undefined','2020-07-28 00:22:11.0',1)
     ,(2,'PHI','2020-07-28 00:22:11.0',1)
     ,(3,'PII','2020-07-28 00:22:11.0',1)
@@ -85,7 +85,7 @@ INSERT INTO refdata_sensitivityflag (SensitiveFlagID,SensitiveFlagDesc,CreatedDa
     ,(6,'N/A','2020-07-28 00:22:11.0',1)
     ,(7,'UNDF','2024-09-06 00:22:11.0',1)
 ;
-INSERT INTO refdata_codeset (CodeSetName,IndustryStd,StatusID,CreatedDate,CreatedUser,CodesetGUID,FieldMapping,SensitivityFlagID,ExternalTableID,ExternalNotes,ExternalLink) VALUES
+INSERT INTO refdata_codeset (codeset_name, industry_std, status_id, created_date, created_user, codeset_guid, field_mapping, sensitivityflag_id, externaltable_id, external_notes, external_link) VALUES
        ('Race','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.10',4,NULL,NULL,NULL),
        ('Language','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.15',4,NULL,NULL,NULL),
        ('Marital Status','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.16',4,NULL,NULL,NULL),
@@ -163,7 +163,7 @@ INSERT INTO refdata_codeset (CodeSetName,IndustryStd,StatusID,CreatedDate,Create
        ('Allergy Code','HL7',1,'2021-08-24 18:27:16',NULL,NULL,'AL1.3',4,NULL,NULL,NULL)
 ;
 INSERT INTO refdata_application
-    (appguid,applicationcustomcode,applicationdesc,createduser,createddate,statusid,vendorid,industry_oid,organization_uid) VALUES
+    (app_guid, application_customcode, application_desc, created_user, created_date, status_id, vendor_id, industry_oid, organization_guid) VALUES
     ('16a17a48-d09b-11ea-9579-bba61161b25a  ','SDP','Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000',1,1,NULL,NULL),
     ('a7d17ac2-fcb7-11eb-a889-168500abc6d9  ','UNDF','Undefined App',NULL,'2021-08-14 04:25:28.000',1,NULL,NULL,NULL),
     ('639ea3bc-d72a-11ea-b0b4-aa403f7fbe39  ','MedHost','MedHost',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.530',NULL),
@@ -179,7 +179,7 @@ INSERT INTO refdata_application
     ('f58a0395-ae2b-48cc-af23-b4b8c80b8658  ','NextGen','NextGen Healthcare','NULL','2022-05-29 05:14:25.337',1,NULL,'2.16.840.1.113883.3.109',NULL),
     ('018fde99-d617-449d-8e28-a70b383337db  ','Philips','Philips Healthcare','NULL','2022-05-29 05:17:02.538',1,NULL,'2.16.840.1.113883.3.326',NULL)
 ;
-INSERT INTO refdata_countries (IDD,CountryName,CreatedDate,StatusID) VALUES 
+INSERT INTO refdata_countries (idd, country_name, created_date, status_id) VALUES
     ('93','Afghanistan','2020-07-28 01:37:16.0',1)
     ,('355','Albania','2020-07-28 01:37:16.0',1)
     ,('213','Algeria','2020-07-28 01:37:16.0',1)
@@ -415,7 +415,7 @@ INSERT INTO refdata_countries (IDD,CountryName,CreatedDate,StatusID) VALUES
     ,('260','Zambia','2020-07-28 01:37:16.0',1)
     ,('263','Zimbabwe','2020-07-28 01:37:16.0',1)
 ;
-INSERT INTO refdata_devicetypes (devicetypeid,devicetype,createddate,statusid) VALUES
+INSERT INTO refdata_devicetypes (devicetype_id, devicetype, created_date, status_id) VALUES
 	 (1,'Watch','2022-01-29 06:23:44.585',1),
 	 (2,'Phone','2022-01-29 06:23:44.585',1),
 	 (3,'Blood Pressure Cuff','2022-01-29 06:23:44.585',1),
@@ -424,7 +424,7 @@ INSERT INTO refdata_devicetypes (devicetypeid,devicetype,createddate,statusid) V
 	 (6,'CPAP','2022-01-29 06:23:44.585',1),
 	 (7,'Pulse Ox','2022-01-29 06:23:44.585',1)
      ;
-INSERT INTO refdata_industries (industryid,industryname,createddate,statusid) VALUES
+INSERT INTO refdata_industries (industry_id, industry_name, created_date, status_id) VALUES
 	 (1,'Healthcare','2022-01-29 05:59:50.287',1),
 	 (2,'Manufacturing','2022-01-29 05:59:50.287',1),
 	 (3,'Telco','2022-01-29 05:59:50.287',1),
@@ -433,16 +433,16 @@ INSERT INTO refdata_industries (industryid,industryname,createddate,statusid) VA
      (6,'General','2022-01-29 06:24:27.892',1),
      (7,'Undefined','2024-09-06 06:24:27.892',1)
      ;
-INSERT INTO refdata_industriestobusiness (industrytobusinessid,industryid,businessarea,createddate,statusid) VALUES
+INSERT INTO refdata_industriestobusiness (industrytobusiness_id, industry_id, business_area, created_date, status_id) VALUES
 	 (1,1,'Clinical Care','2022-01-29 06:14:19.888',1),
 	 (2,1,'Claims','2022-01-29 06:14:19.888',1),
 	 (3,1,'Emergency Care','2022-01-29 06:14:19.888',1),
 	 (4,1,'Surgeries','2022-01-29 06:14:19.888',1)
      ;
-INSERT INTO refdata_legalentities (LegalEntityGUID,LocationName,Address,City,StateID,ZipCode,CreatedUser,StatusID,CreatedDate,LocationURL,LocationPhone) VALUES
+INSERT INTO refdata_legalentities (legalentity_guid, location_name, address, city, state_id, zipcode, created_user, status_id, created_date, location_url, location_phone) VALUES
     ('7ae3b73b-05d4-11ec-a889-168500abc6d9','Care Delivery US',NULL,NULL,'TN',NULL,NULL,1,'2021-08-25 18:44:29',NULL,NULL)
     ;
-INSERT INTO refdata_operationtype (operationtypeid,operationtypename,createddate,statusid) VALUES
+INSERT INTO refdata_operationtype (operationtype_id, operationtype_name, created_date, status_id) VALUES
 	 ('!=','Not Equal To','2020-07-28 00:25:23.000',1),
 	 ('<','Less Than','2020-07-28 00:25:23.000',1),
 	 ('<=','Less Than or Equal To','2020-07-28 00:25:23.000',1),
@@ -456,12 +456,12 @@ INSERT INTO refdata_operationtype (operationtypeid,operationtypename,createddate
 	 ('MAXLNGT','Maximum Length','2022-05-28 05:41:33.108',1),
 	 ('MINLNGT','Minimum Length','2022-05-28 05:41:33.108',1)
      ;
-INSERT INTO refdata_organization (OrganizationGUID,OrganizationInternalCode,OrganizationInternalID,OrganizationName,Address,City,StateID,ZipCode,CreatedUser,StatusID,CreatedDate,LegalEntityGUID) VALUES
+INSERT INTO refdata_organization (organization_guid, organization_internal_code, organization_internal_id, organization_name, address, city, state_id, zipcode, created_user, status_id, created_date, legalentity_guid) VALUES
 	 ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','MCTN','MCTN','Mid County TN Hospital','101 Healthcare Way','Franklin','TN','37067',NULL,1,'2020-08-05 09:43:27',NULL),
 	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','ERSprHill','ERSH','ER - Free standing ER ','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,1,'2020-08-05 09:43:27',NULL),
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,1,'2020-07-28 01:23:30',NULL)
      ;
-INSERT INTO refdata_terminologystd (TerminologyStd, TerminologyStdVersion, TerminologyStdDesc)
+INSERT INTO refdata_terminologystd (terminologystd, terminologystd_version, terminologystd_desc)
 values
     ('AIR', '1995AA', 'AI/RHEUM'),
     ('ALT', '2009AA', 'Alternative Billing Concepts'),
@@ -679,4 +679,3 @@ values
     ('WHOPOR', '1999AA', 'WHOART Portuguese'),
     ('WHOSPA', '1999AA', 'WHOART Spanish')
 ;
-        
