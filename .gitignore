@@ -398,4 +398,6 @@ lerna-debug.log
 Thumbs.db
 env-variables.sh
 
+# Python specific and Jupyter Notebook
 .venv
+/SQL/.ipynb_checkpoints
