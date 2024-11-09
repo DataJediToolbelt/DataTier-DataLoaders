@@ -85,7 +85,7 @@ INSERT INTO refdata_sensitivityflag (sensitiveflag_id, sensitiveflag_desc, creat
     ,(6,'N/A','2020-07-28 00:22:11.0',1)
     ,(7,'UNDF','2024-09-06 00:22:11.0',1)
 ;
-INSERT INTO refdata_codeset (codesets_id, codeset_name, industry_std, status_id, created_date, created_user, codeset_guid, field_mapping, sensitivityflag_id, externaltable_id, external_notes, external_link) VALUES
+INSERT INTO refdata_codeset (codeset_name, industry_std, status_id, created_date, created_user, codeset_guid, field_mapping, sensitivityflag_id, externaltable_id, external_notes, external_link) VALUES
        ('Race','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.10',4,NULL,NULL,NULL),
        ('Language','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.15',4,NULL,NULL,NULL),
        ('Marital Status','HL7',1,'2020-07-28 02:04:43',NULL,NULL,'PID.16',4,NULL,NULL,NULL),
@@ -163,7 +163,7 @@ INSERT INTO refdata_codeset (codesets_id, codeset_name, industry_std, status_id,
        ('Allergy Code','HL7',1,'2021-08-24 18:27:16',NULL,NULL,'AL1.3',4,NULL,NULL,NULL)
 ;
 INSERT INTO refdata_application
-    (app_guid, application_customcode, application_desc, created_user, created_date, status_id, vendor_id, industry_oid, organization_uid) VALUES
+    (app_guid, application_customcode, application_desc, created_user, created_date, status_id, vendor_id, industry_oid, organization_guid) VALUES
     ('16a17a48-d09b-11ea-9579-bba61161b25a  ','SDP','Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000',1,1,NULL,NULL),
     ('a7d17ac2-fcb7-11eb-a889-168500abc6d9  ','UNDF','Undefined App',NULL,'2021-08-14 04:25:28.000',1,NULL,NULL,NULL),
     ('639ea3bc-d72a-11ea-b0b4-aa403f7fbe39  ','MedHost','MedHost',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.530',NULL),
@@ -179,7 +179,7 @@ INSERT INTO refdata_application
     ('f58a0395-ae2b-48cc-af23-b4b8c80b8658  ','NextGen','NextGen Healthcare','NULL','2022-05-29 05:14:25.337',1,NULL,'2.16.840.1.113883.3.109',NULL),
     ('018fde99-d617-449d-8e28-a70b383337db  ','Philips','Philips Healthcare','NULL','2022-05-29 05:17:02.538',1,NULL,'2.16.840.1.113883.3.326',NULL)
 ;
-INSERT INTO refdata_countries (country_id, idd, country_name, created_date, status_id) VALUES
+INSERT INTO refdata_countries (idd, country_name, created_date, status_id) VALUES
     ('93','Afghanistan','2020-07-28 01:37:16.0',1)
     ,('355','Albania','2020-07-28 01:37:16.0',1)
     ,('213','Algeria','2020-07-28 01:37:16.0',1)
@@ -461,7 +461,7 @@ INSERT INTO refdata_organization (organization_guid, organization_internal_code,
 	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','ERSprHill','ERSH','ER - Free standing ER ','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,1,'2020-08-05 09:43:27',NULL),
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,1,'2020-07-28 01:23:30',NULL)
      ;
-INSERT INTO refdata_terminologystd (terminologystd_id, terminologystd, terminologystd_version, terminologystd_desc)
+INSERT INTO refdata_terminologystd (terminologystd, terminologystd_version, terminologystd_desc)
 values
     ('AIR', '1995AA', 'AI/RHEUM'),
     ('ALT', '2009AA', 'Alternative Billing Concepts'),
@@ -679,4 +679,3 @@ values
     ('WHOPOR', '1999AA', 'WHOART Portuguese'),
     ('WHOSPA', '1999AA', 'WHOART Spanish')
 ;
-        
