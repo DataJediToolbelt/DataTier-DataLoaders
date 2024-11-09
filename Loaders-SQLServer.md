@@ -30,50 +30,50 @@ SQL Management Studio
 ## DataTier
 
 `
-./InsertScripts-Base/4-Datatier-Pt1-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt1-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt2-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt2-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt3-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt3-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt4-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt4-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt5-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt5-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt6-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt6-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt7-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt7-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt8-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt8-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt9-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt9-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt10-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt10-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt11-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt11-Generic.sql
 `
 
 `
-./InsertScripts-Base/4-Datatier-Pt12-Generic.sql
+./InsertScripts-Base/4-Datatier-SDP-DataAttributes-Pt12-Generic.sql
 `
 
