@@ -11,7 +11,7 @@ account used everytime you run a script.
 Your loader command would look like this:
 
 `
-/Library/PostgreSQL/14/bin/psql h localhost -U <username> -d <databasename> -p 5432 -f file.sql
+/Library/PostgreSQL/14/bin/psql -h <hostname> -p <port> -U <username> -d <databasename> -f file.sql
 `
 
 If you set the path to the psql binaries:

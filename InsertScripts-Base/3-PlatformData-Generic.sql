@@ -85,7 +85,7 @@ INSERT INTO platform_datageneration (datagentype_id, datagentype_description, de
 	 (58,'Peoples Bank','^[0-9]{10}$',7,'2021-05-24 19:48:21',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 (59,'Cadeceus','^[%#@&]{1}[A-Z]{3}[%#@&]{1}[0-9]{1}[A-Z]{2}$',15,'2021-05-24 19:48:21',1,'platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a ')
 ;
-INSERT INTO platform_datastructures (platformdatastructures_id, datastructure_name, sensitivityflag_id, created_date, status_id, created_user, platformdatastructures_guid, registered_app) VALUES
+INSERT INTO platform_datastructures (platform_datastructures_id, datastructure_name, sensitivityflag_id, created_date, status_id, created_user, platform_datastructures_guid, registeredapp_guid) VALUES
       (1,'Person Demographics',2,'2021-03-29 11:23:43.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (2,'Bank Account',2,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
       (3,'US Phone Number',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
