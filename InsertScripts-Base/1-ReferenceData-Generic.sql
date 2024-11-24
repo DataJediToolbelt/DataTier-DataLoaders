@@ -468,7 +468,7 @@ INSERT INTO refdata_organization (organization_guid, organization_internal_code,
 	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','TestOrg.','TORG','Test Organization','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,1,'2020-08-05 09:43:27',NULL),
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,1,'2020-07-28 01:23:30',NULL)
      ;
-INSERT INTO refdata_terminologystd (terminologystd, terminologystd_version, terminologystd_desc)
+INSERT INTO refdata_terminologystd (terminology_std, terminologystd_version, terminologystd_desc)
 values
     ('AIR', '1995AA', 'AI/RHEUM'),
     ('ALT', '2009AA', 'Alternative Billing Concepts'),

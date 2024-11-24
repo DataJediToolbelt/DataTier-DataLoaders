@@ -492,7 +492,7 @@ INSERT INTO refdata_organization (organization_guid, organization_internal_code,
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,1,'2020-07-28 01:23:30',NULL)
 ;
 
-INSERT INTO refdata_terminologystd (terminologystd, terminologystd_version, terminologystd_desc) VALUES  ('AIR', '1995AA', 'AI/RHEUM'),
+INSERT INTO refdata_terminologystd (terminology_std, terminologystd_version, terminologystd_desc) VALUES  ('AIR', '1995AA', 'AI/RHEUM'),
         ('ALT', '2009AA', 'Alternative Billing Concepts'),
         ('AOD', '2002AC', 'Alcohol and Other Drug Thesaurus'),
         ('AOT', '2006AD', 'Authorized Osteopathic Thesaurus'),
