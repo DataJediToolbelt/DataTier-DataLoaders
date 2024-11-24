@@ -177,7 +177,14 @@ INSERT INTO refdata_application
     ('c73ab2ba-2231-499a-95cb-f550dffe1565  ','Mckesson','McKesson','NULL','2022-05-29 05:09:01.559',1,NULL,'2.16.840.1.113883.3.1070',NULL),
     ('1a5b921d-7204-4f06-a0b0-c038c3f0bf27  ','Nuance','Nuance','NULL','2022-05-29 05:10:42.485',1,NULL,'2.16.840.1.113883.3.423',NULL),
     ('f58a0395-ae2b-48cc-af23-b4b8c80b8658  ','NextGen','NextGen Healthcare','NULL','2022-05-29 05:14:25.337',1,NULL,'2.16.840.1.113883.3.109',NULL),
-    ('018fde99-d617-449d-8e28-a70b383337db  ','Philips','Philips Healthcare','NULL','2022-05-29 05:17:02.538',1,NULL,'2.16.840.1.113883.3.326',NULL)
+    ('018fde99-d617-449d-8e28-a70b383337db  ','Philips','Philips Healthcare','NULL','2022-05-29 05:17:02.538',1,NULL,'2.16.840.1.113883.3.326',NULL),
+    ('d175be0a-c1ce-477c-91e9-bc14886f35ba  ','SalesForce','SalesForce','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
+    ('18e938bd-c617-48d0-9bdc-40a668c9c7d5  ','Infor','Infor','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
+    ('821becaa-417c-402f-8de6-d3185f0cc8da  ','Stripe','Stripe','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
+    ('4cbc2657-3c61-4f89-a21e-b7343c17f059  ','SAP','SAP','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
+    ('a964bfa3-2358-4644-9185-471063f74bb6  ','Monday','Monday','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
+    ('830d5a89-ef0e-4d62-9794-c311c87cb571  ','Workday','Workday','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
+    ('5dcac5b7-ef29-4cb7-bbc8-63c4b4b7a59a  ','ADP','ADP','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL)
 ;
 INSERT INTO refdata_countries (idd, country_name, created_date, status_id) VALUES
     ('93','Afghanistan','2020-07-28 01:37:16.0',1)
@@ -457,8 +464,8 @@ INSERT INTO refdata_operationtype (operationtype_id, operationtype_name, created
 	 ('MINLNGT','Minimum Length','2022-05-28 05:41:33.108',1)
      ;
 INSERT INTO refdata_organization (organization_guid, organization_internal_code, organization_internal_id, organization_name, address, city, state_id, zipcode, created_user, status_id, created_date, legalentity_guid) VALUES
-	 ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','MCTN','MCTN','Mid County TN Hospital','101 Healthcare Way','Franklin','TN','37067',NULL,1,'2020-08-05 09:43:27',NULL),
-	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','ERSprHill','ERSH','ER - Free standing ER ','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,1,'2020-08-05 09:43:27',NULL),
+	  ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','DEMO','DEMO','Demonstration - Organization','101 Healthcare Way','Franklin','TN','37067',NULL,1,'2020-08-05 09:43:27',NULL),
+	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','TestOrg.','TORG','Test Organization','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,1,'2020-08-05 09:43:27',NULL),
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,1,'2020-07-28 01:23:30',NULL)
      ;
 INSERT INTO refdata_terminologystd (terminologystd, terminologystd_version, terminologystd_desc)
