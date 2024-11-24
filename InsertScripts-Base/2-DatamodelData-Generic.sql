@@ -13,9 +13,12 @@ INSERT INTO datamodel_datatables (tablename,tableinformation,status_id,created_d
        ('datamodel_datatables','This table for data model details and explanations',1,'2020-08-04 22:18:04.000','datamodel'),
        ('datamodel_domain','Reference for all domains within the database x_',1,'2021-08-25 15:37:45.000','datamodel'),
        ('datamodel_apis','API details for the platform',1,'2022-04-22 04:03:50.139','datamodel'),
-       ('platform_dataattributes','Platform data attributes - the base for anything that can be built within the platform',1,'2020-08-04 22:18:04.000','platform'),
-       ('platform_datageneration','Specific data generators the platform can do',1,'2021-08-25 15:26:19.000','refdata'),
-       ('platform_datastructures','Data Structures Header Records',1,'2023-01-04 22:26:42.059','platform'),
+       ('platform_codesets','Reference data from applications. Associations to refdata_codesets is needed.',1,'2021-08-25 15:34:04.000','platform'),
+       ('platform_codesets_industrystd','These specifically represent loaded data from UMLS using MRCONSO.RRF files.',1,'2021-08-25 15:28:27.000','platform'),
+       ('platform_codesets_xmap','Terminologies that are mapped from a source system to a target system with all supporting details.',1,'2021-08-25 15:34:04.000','platform'),
+       ('platform_databuilding_dataattributes','Specific data builders that can be run. These are specific to data attributes available in the platform',1,'2021-08-25 15:26:19.000','platform'),
+       ('platform_databuilding_datastructures','Specific data builders that can be run. These are specific to the data structures available in the platform.',1,'2021-08-25 15:26:19.000','platform'),
+       ('platform_datageneration_dataattributes','Specific data generators the platform can do',1,'2021-08-25 15:26:19.000','platform'),
        ('platform_datastructures_dtl','Data Structure Specific Attribute Details for the complete data structure',1,'2023-01-04 22:27:50.910','platform'),
        ('platform_datasources','Data Sources available to be used to connect to systems throughout the platform.',1,'2023-01-04 22:27:50.910','platform'),
        ('platform_xmap_tokens_attributes_dtl','Crossmapping of data attributes to a specific data source. This is the ONLY details we store for token reference',1,'2023-01-04 22:27:50.910','platform'),
@@ -23,6 +26,8 @@ INSERT INTO datamodel_datatables (tablename,tableinformation,status_id,created_d
        ('refdata_codeset','Platform Reference Data - Codesets Supported within Platform',1,'2020-08-04 22:18:04.000','refdata'),
        ('platform_codesets_crossmaps','Impl Specific CrossMaps of terms with specific details',1,'2021-02-07 03:04:57.000','platform'),
        ('refdata_countries','Platform Reference Data - Countries',1,'2020-08-04 22:18:04.000','refdata'),
+       ('refdata_dataattributes','Platform data attributes - the base for anything that can be built within the platform',1,'2020-08-04 22:18:04.000','refdata'),
+       ('refdata_datastructures','Data Structures Header Records',1,'2023-01-04 22:26:42.059','refdata'),
        ('refdata_devicetypes','Different Types of devices',1,'2023-01-04 22:36:20.777','refdata'),
        ('refdata_industries','Industries Supported By Platform',1,'2022-05-29 06:06:05.894','refdata'),
        ('refdata_industriestobusiness','Specific Business related to industries supported',1,'2022-05-29 06:06:05.894','refdata'),
@@ -40,7 +45,5 @@ INSERT INTO datamodel_datatables (tablename,tableinformation,status_id,created_d
        ('refdata_terminologystd','Reference Data - All Supprted Terminology Stds',1,'2021-08-25 15:27:33.000','refdata'),
        ('refdata_timezones','Platform Reference Data - Time Zones',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_usstates','Platform Reference Data - US States',1,'2020-08-04 22:18:04.000','refdata'),
-       ('refdata_vendor','Platform Reference Data - Vendors',1,'2020-08-04 22:18:04.000','refdata'),
-       ('terms_umls_mrconso','Loaded UMLS MrConso Data Files of 16.xM terms',1,'2021-08-25 15:34:04.000','terms'),
-       ('terms_codeset_industrystd','Specific Terminologies ONLY Intended for HL7v2 standard terms',1,'2021-08-25 15:28:27.000','terms')
+       ('refdata_vendor','Platform Reference Data - Vendors',1,'2020-08-04 22:18:04.000','refdata')
 ;
