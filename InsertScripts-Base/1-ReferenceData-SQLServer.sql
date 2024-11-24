@@ -174,7 +174,7 @@ INSERT INTO refdata_codeset (codeset_name, industry_std, status_id, created_date
        ('Allergy Code','HL7',1,'2021-08-24 18:27:16',NULL,NULL,'AL1.3',4,NULL,NULL,NULL)
 ;
 
-INSERT INTO refdata_application (app_guid, application_customcode, application_desc, created_user, created_date, status_id, vendor_id, industry_oid, organization_uid) VALUES
+INSERT INTO refdata_application (app_guid, application_customcode, application_desc, created_user, created_date, status_id, vendor_id, industry_oid, organization_guid) VALUES
     ('16a17a48-d09b-11ea-9579-bba61161b25a  ','SDP','Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000',1,1,NULL,NULL),
     ('a7d17ac2-fcb7-11eb-a889-168500abc6d9  ','UNDF','Undefined App',NULL,'2021-08-14 04:25:28.000',1,NULL,NULL,NULL),
     ('639ea3bc-d72a-11ea-b0b4-aa403f7fbe39  ','MedHost','MedHost',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.530',NULL),
@@ -477,12 +477,11 @@ INSERT INTO refdata_operationtype (operationtype_id, operationtype_name, created
 	 ('MAX','Maximum Value','2022-05-28 05:41:33.108',1),
 	 ('MEDIAN','Median Value','2022-05-28 05:41:33.108',1),
 	 ('MAXLNGT','Maximum Length','2022-05-28 05:41:33.108',1),
-	 ('MINLNGT','Minimum Length','2022-05-28 05:41:33.108',1)
-     ;
+    ;
 
 INSERT INTO refdata_organization (organization_guid, organization_internal_code, organization_internal_id, organization_name, address, city, state_id, zipcode, created_user, status_id, created_date, legalentity_guid) VALUES
-	 ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','MCTN','MCTN','Mid County TN Hospital','101 Healthcare Way','Franklin','TN','37067',NULL,1,'2020-08-05 09:43:27',NULL),
-	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','ERSprHill','ERSH','ER - Free standing ER ','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,1,'2020-08-05 09:43:27',NULL),
+	 ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','DEMO','DEMO','Demonstration - Organization','101 Healthcare Way','Franklin','TN','37067',NULL,1,'2020-08-05 09:43:27',NULL),
+	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','TestOrg.','TORG','Test Organization','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,1,'2020-08-05 09:43:27',NULL),
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,1,'2020-07-28 01:23:30',NULL)
 ;
 
@@ -702,3 +701,42 @@ INSERT INTO refdata_terminologystd (terminologystd, terminologystd_version, term
         ('WHOPOR', '1999AA', 'WHOART Portuguese'),
         ('WHOSPA', '1999AA', 'WHOART Spanish')
 ;
+
+SET IDENTITY_INSERT refdata_datastructures ON;
+INSERT INTO refdata_datastructures (datastructure_id, datastructure_name, sensitivityflag_id, created_date, status_id, created_user, platform_datastructures_guid, registeredapp_guid) VALUES
+      (1,'Person Demographics',2,'2021-03-29 11:23:43.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
+      (2,'Bank Account',2,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
+      (3,'US Phone Number',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
+      (4,'Complete Name',3,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL),
+      (5,'US Address',1,'2021-03-29 11:33:12.000',1,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ',NULL)
+;
+SET IDENTITY_INSERT refdata_datastructures OFF;
+
+SET IDENTITY_INSERT refdata_dataattributes ON;
+INSERT INTO refdata_dataattributes (dataattribute_id, dataattribute_name, sensitivityflag_id, created_date, status_id, created_user, platform_dataattribute_guid, registeredapp_guid, attribute_type) VALUES
+      (1,'Names - Last',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Upsert'),
+      (2,'Area Code',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (3,'Address',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (4,'ZipCode US - Includes City & State',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (5,'Phone Number - US',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (6,'Credit Cards',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (7,'Bank Accounts',1,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (8,'Date of Birth',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (9,'Drivers License Number',1,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (10,'Social Security Number',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (11,'UPC Codes',1,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (12,'Company Names',1,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (13,'Employer Identification Numbers (EIN)',1,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (14,'Account Numbers',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (15,'User Identities',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (16,'Bank Routing',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (17,'Phone Number - International',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (19,'Area Code Intl - IDD',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (20,'ZipCode Intl ',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (18,'Names - First',3,'2020-08-04 21:51:36.000',1,NULL,NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Upsert'),
+      (21,'Serial Numbers',6,'2022-06-02 13:59:20.860',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (22,'Regular Expression Based Data',3,'2023-01-18 23:51:30.423',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
+      (23,'Professions',3,'2023-01-19 10:06:59.813',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
+      (24,'Devices',3,'2023-12-31 04:21:49.731',1,'NULL','NULL ','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator')
+;
+SET IDENTITY_INSERT refdata_dataattributes OFF;

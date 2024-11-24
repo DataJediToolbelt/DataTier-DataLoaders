@@ -24,7 +24,6 @@ INSERT INTO datamodel_datatables (tablename,tableinformation,status_id,created_d
        ('platform_xmap_tokens_attributes_dtl','Crossmapping of data attributes to a specific data source. This is the ONLY details we store for token reference',1,'2023-01-04 22:27:50.910','platform'),
        ('refdata_application','Implementation Specific Applications ',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_codeset','Platform Reference Data - Codesets Supported within Platform',1,'2020-08-04 22:18:04.000','refdata'),
-       ('platform_codesets_crossmaps','Impl Specific CrossMaps of terms with specific details',1,'2021-02-07 03:04:57.000','platform'),
        ('refdata_countries','Platform Reference Data - Countries',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_dataattributes','Platform data attributes - the base for anything that can be built within the platform',1,'2020-08-04 22:18:04.000','refdata'),
        ('refdata_datastructures','Data Structures Header Records',1,'2023-01-04 22:26:42.059','refdata'),
