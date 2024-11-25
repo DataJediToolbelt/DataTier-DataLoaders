@@ -164,27 +164,27 @@ INSERT INTO refdata_codesets (codeset_name, industry_std, status_id, created_dat
 ;
 INSERT INTO refdata_applications
     (app_guid, application_customcode, application_desc, created_user, created_date, status_id, vendor_id, industry_oid, organization_guid) VALUES
-    ('16a17a48-d09b-11ea-9579-bba61161b25a  ','SDP','Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000',1,1,NULL,NULL),
-    ('a7d17ac2-fcb7-11eb-a889-168500abc6d9  ','UNDF','Undefined App',NULL,'2021-08-14 04:25:28.000',1,NULL,NULL,NULL),
-    ('639ea3bc-d72a-11ea-b0b4-aa403f7fbe39  ','MedHost','MedHost',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.530',NULL),
-    ('639de2e2-d72a-11ea-b0b4-aa403f7fbe39  ','EpicHC','Epic',NULL,'2020-08-05 09:46:04.000',1,NULL,'1.2.840.1.114350',NULL),
-    ('639f6784-d72a-11ea-b0b4-aa403f7fbe39  ','Greenway','Greenway Healthcare',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.7858',NULL),
-    ('63a032c2-d72a-11ea-b0b4-aa403f7fbe39  ','eCW','E Clinical Works',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.3590',NULL),
-    ('63a0f63a-d72a-11ea-b0b4-aa403f7fbe39  ','Meditech','Meditech',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.6128',NULL),
-    ('63a26754-d72a-11ea-b0b4-aa403f7fbe39  ','GE','General Electric - Healthcare',NULL,'2020-08-05 09:46:04.000',1,NULL,'1.2.392.200036.9111.370',NULL),
-    ('63a1b624-d72a-11ea-b0b4-aa403f7fbe39  ','Cerner','Cerner',NULL,'2020-08-05 09:46:04.000',1,NULL,'2.16.840.1.113883.3.13',NULL),
-    ('39cdbfb3-3456-488c-83d7-68763a14ea3d  ','AllScripts','AllScripts','NULL','2022-05-29 05:04:55.025',1,NULL,'2.16.840.1.113883.4.928',NULL),
-    ('c73ab2ba-2231-499a-95cb-f550dffe1565  ','Mckesson','McKesson','NULL','2022-05-29 05:09:01.559',1,NULL,'2.16.840.1.113883.3.1070',NULL),
-    ('1a5b921d-7204-4f06-a0b0-c038c3f0bf27  ','Nuance','Nuance','NULL','2022-05-29 05:10:42.485',1,NULL,'2.16.840.1.113883.3.423',NULL),
-    ('f58a0395-ae2b-48cc-af23-b4b8c80b8658  ','NextGen','NextGen Healthcare','NULL','2022-05-29 05:14:25.337',1,NULL,'2.16.840.1.113883.3.109',NULL),
-    ('018fde99-d617-449d-8e28-a70b383337db  ','Philips','Philips Healthcare','NULL','2022-05-29 05:17:02.538',1,NULL,'2.16.840.1.113883.3.326',NULL),
-    ('d175be0a-c1ce-477c-91e9-bc14886f35ba  ','SalesForce','SalesForce','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
-    ('18e938bd-c617-48d0-9bdc-40a668c9c7d5  ','Infor','Infor','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
-    ('821becaa-417c-402f-8de6-d3185f0cc8da  ','Stripe','Stripe','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
-    ('4cbc2657-3c61-4f89-a21e-b7343c17f059  ','SAP','SAP','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
-    ('a964bfa3-2358-4644-9185-471063f74bb6  ','Monday','Monday','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
-    ('830d5a89-ef0e-4d62-9794-c311c87cb571  ','Workday','Workday','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL),
-    ('5dcac5b7-ef29-4cb7-bbc8-63c4b4b7a59a  ','ADP','ADP','NULL','2022-05-29 05:17:02.538',1,NULL,NULL,NULL)
+    ('16a17a48-d09b-11ea-9579-bba61161b25a  ','SDP','Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000',1,'d04ac95d-b26e-401f-a740-f19ce3d486f0',NULL,NULL),
+    ('a7d17ac2-fcb7-11eb-a889-168500abc6d9  ','UNDF','Undefined App',NULL,'2021-08-14 04:25:28.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
+    ('639ea3bc-d72a-11ea-b0b4-aa403f7fbe39  ','MedHost','MedHost',NULL,'2020-08-05 09:46:04.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.530',NULL),
+    ('639de2e2-d72a-11ea-b0b4-aa403f7fbe39  ','EpicHC','Epic',NULL,'2020-08-05 09:46:04.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','1.2.840.1.114350',NULL),
+    ('639f6784-d72a-11ea-b0b4-aa403f7fbe39  ','Greenway','Greenway Healthcare',NULL,'2020-08-05 09:46:04.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.7858',NULL),
+    ('63a032c2-d72a-11ea-b0b4-aa403f7fbe39  ','eCW','E Clinical Works',NULL,'2020-08-05 09:46:04.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.3590',NULL),
+    ('63a0f63a-d72a-11ea-b0b4-aa403f7fbe39  ','Meditech','Meditech',NULL,'2020-08-05 09:46:04.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.6128',NULL),
+    ('63a26754-d72a-11ea-b0b4-aa403f7fbe39  ','GE','General Electric - Healthcare',NULL,'2020-08-05 09:46:04.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','1.2.392.200036.9111.370',NULL),
+    ('63a1b624-d72a-11ea-b0b4-aa403f7fbe39  ','Cerner','Cerner',NULL,'2020-08-05 09:46:04.000',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.13',NULL),
+    ('39cdbfb3-3456-488c-83d7-68763a14ea3d  ','AllScripts','AllScripts','NULL','2022-05-29 05:04:55.025',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.4.928',NULL),
+    ('c73ab2ba-2231-499a-95cb-f550dffe1565  ','Mckesson','McKesson','NULL','2022-05-29 05:09:01.559',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.1070',NULL),
+    ('1a5b921d-7204-4f06-a0b0-c038c3f0bf27  ','Nuance','Nuance','NULL','2022-05-29 05:10:42.485',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.423',NULL),
+    ('f58a0395-ae2b-48cc-af23-b4b8c80b8658  ','NextGen','NextGen Healthcare','NULL','2022-05-29 05:14:25.337',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.109',NULL),
+    ('018fde99-d617-449d-8e28-a70b383337db  ','Philips','Philips Healthcare','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.326',NULL),
+    ('d175be0a-c1ce-477c-91e9-bc14886f35ba  ','SalesForce','SalesForce','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
+    ('18e938bd-c617-48d0-9bdc-40a668c9c7d5  ','Infor','Infor','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
+    ('821becaa-417c-402f-8de6-d3185f0cc8da  ','Stripe','Stripe','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
+    ('4cbc2657-3c61-4f89-a21e-b7343c17f059  ','SAP','SAP','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
+    ('a964bfa3-2358-4644-9185-471063f74bb6  ','Monday','Monday','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
+    ('830d5a89-ef0e-4d62-9794-c311c87cb571  ','Workday','Workday','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
+    ('5dcac5b7-ef29-4cb7-bbc8-63c4b4b7a59a  ','ADP','ADP','NULL','2022-05-29 05:17:02.538',1,'f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL)
 ;
 INSERT INTO refdata_countries (idd, country_name, created_date, status_id) VALUES
     ('93','Afghanistan','2020-07-28 01:37:16.0',1)
