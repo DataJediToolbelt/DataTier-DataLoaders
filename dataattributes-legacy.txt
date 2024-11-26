@@ -25,3 +25,49 @@ INSERT INTO platform_dataattributes (platform_dataattributes_id, dataattribute_n
       (23,'Professions',3,'2023-01-19 10:06:59.813',1,'NULL','NULL','16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
       (24,'Devices',3,'2023-12-31 04:21:49.731',1,'NULL','NULL ','16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator')
 ;
+
+select old_dataattribute_id,dataattribute_id,dataattribute_name from refdata_dataattributes
+order by old_dataattribute_id asc
+
+Convert from ids to guids
+----------------------------------
+ update datatier_sdp_dataattributes_master set dataattribute_guid='0aab5e78-5a12-462c-9226-606a2f8482bf' where dataattribute_id=1;
+update datatier_sdp_dataattributes_master set dataattribute_guid='9315b38d-bac2-44b4-b661-65b785b01b3d' where dataattribute_id=2;
+update datatier_sdp_dataattributes_master set dataattribute_guid='e4e1fcff-bea2-4db9-b328-9082e55c7cac' where dataattribute_id=3;
+update datatier_sdp_dataattributes_master set dataattribute_guid='ebebd1ea-fa92-448d-af96-7cdbcd578c32' where dataattribute_id=4;
+update datatier_sdp_dataattributes_master set dataattribute_guid='aba87b6a-5f5a-4d09-ba2a-c6cfff4bd23a' where dataattribute_id=5;
+update datatier_sdp_dataattributes_master set dataattribute_guid='a0b7c079-3cd6-4447-97ed-4419652145d3' where dataattribute_id=6;
+update datatier_sdp_dataattributes_master set dataattribute_guid='49024eab-ae0d-4889-b0d2-27014c0ac190' where dataattribute_id=7;
+update datatier_sdp_dataattributes_master set dataattribute_guid='92f9ab0b-ea1f-4b47-b646-8f038a29c42b' where dataattribute_id=8;
+update datatier_sdp_dataattributes_master set dataattribute_guid='a3d3a4ae-efbe-42ff-b7d4-faea95acd451' where dataattribute_id=9;
+update datatier_sdp_dataattributes_master set dataattribute_guid='8009f1fc-41d0-4a46-9969-809d7dc5b3cf' where dataattribute_id=10;
+update datatier_sdp_dataattributes_master set dataattribute_guid='de9a0011-040b-4a00-be51-c7addad0607c' where dataattribute_id=11;
+update datatier_sdp_dataattributes_master set dataattribute_guid='8b215071-3047-476f-b22a-7051eb7207fa' where dataattribute_id=12;
+update datatier_sdp_dataattributes_master set dataattribute_guid='4a905b02-97e2-4909-ba9a-551e97587d6d' where dataattribute_id=13;
+update datatier_sdp_dataattributes_master set dataattribute_guid='fdeb2e11-c8c8-41f5-aa57-5e5807664a0d' where dataattribute_id=14;
+update datatier_sdp_dataattributes_master set dataattribute_guid='820c0ed7-7e04-41b7-b87e-906f4f926630' where dataattribute_id=15;
+update datatier_sdp_dataattributes_master set dataattribute_guid='e4c3cb42-ff0d-4692-b9e3-5976b229be39' where dataattribute_id=16;
+update datatier_sdp_dataattributes_master set dataattribute_guid='9b0cb799-43dd-4d5b-8b64-2cd9773669de' where dataattribute_id=17;
+update datatier_sdp_dataattributes_master set dataattribute_guid='cbf2f975-a62f-4f8c-8031-b54a01d2e153' where dataattribute_id=18;
+update datatier_sdp_dataattributes_master set dataattribute_guid='be342772-cf13-4e64-8516-1fff67b62c82' where dataattribute_id=19;
+update datatier_sdp_dataattributes_master set dataattribute_guid='10bf5e78-d4ae-41c0-8bb5-ece67d8726b4' where dataattribute_id=20;
+update datatier_sdp_dataattributes_master set dataattribute_guid='0d4c7916-baba-4252-a04d-a5895c858ce4' where dataattribute_id=21;
+update datatier_sdp_dataattributes_master set dataattribute_guid='5d02045d-fec6-49b8-b9ea-8d3e5681803d' where dataattribute_id=22;
+update datatier_sdp_dataattributes_master set dataattribute_guid='28f5d683-6884-45cd-a96b-eaae559e292a' where dataattribute_id=23;
+update datatier_sdp_dataattributes_master set dataattribute_guid='60f0e0c9-8f15-44bb-bc93-3c31e425ea56' where dataattribute_id=24;
+
+select dataattribute_id, dataattribute_guid, count(*) from datatier_sdp_dataattributes_master
+group by dataattribute_id, dataattribute_guid
+order by dataattribute_id, dataattribute_guid
+
+New Export
+---------------
+select basevalue, supportingvalue1, supportingvalue2, supportingvalue3, supportingvalue4, supportingvalue5, supportingvalue6,
+supportingvalue7, created_date, status_text as status_id, dataattribute_guid as dataattribute_id, created_user,
+registeredapp_guid from datatier_sdp_dataattributes_master
+
+Export to Formatted Table for Simple Export Query
+
+select basevalue, supportingvalue1, supportingvalue2, supportingvalue3, supportingvalue4, supportingvalue5, supportingvalue6,
+supportingvalue7, created_date, status_text as status_id, dataattribute_guid as dataattribute_id, created_user,
+registeredapp_guid into datatier_sdp_dataattributes_guids from datatier_sdp_dataattributes_master
