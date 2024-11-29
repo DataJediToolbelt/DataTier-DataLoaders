@@ -2,7 +2,6 @@ INSERT INTO datamodel_domains (domainname,domaininformation,status_id,created_da
        ('refdata','Reference Tables that provided support for the platform','Active','2021-08-25 16:23:37.000'),
        ('datatier','DataTiers are key tables that provide specific main platform capabilities','Active','2021-08-25 16:20:24.000'),
        ('platform','Platform data used globally within the platform','Active','2021-08-25 16:23:37.000'),
-       ('terms','Terminologies - data available within the platform','Active','2021-08-25 16:23:37.000'),
        ('datamodel','Database platform defintiions - tables, domains','Active','2021-08-25 16:21:49.000')
 ;
 INSERT INTO datamodel_datatables (tablename,tableinformation,status_id,created_date,datadomain) VALUES
