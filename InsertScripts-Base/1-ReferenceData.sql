@@ -5,7 +5,7 @@ INSERT INTO refdata_status(status_id, status_description, created_date, created_
     ,('UNDF','Undefined','2020-07-21 01:12:51.0',NULL)
 ;
 
-INSERT INTO refdata_timezones (timezone_value, timezone_desc, created_date, status_id) VALUES
+INSERT INTO refdata_timezones (timezone_id, timezone_desc, created_date, status_id) VALUES
     ('CST','Central Timezone','2020-07-21 01:18:34.0','Active')
     ,('EST','Eastern Timezone','2020-07-21 01:18:34.0','Active')
     ,('MST','Mountain Timezone','2020-07-21 01:18:34.0','Active')
