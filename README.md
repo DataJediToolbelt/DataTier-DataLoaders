@@ -33,6 +33,8 @@ To make the process more unified and consistent we have done a few things:
 our loaders against large datasets.
 - Simplified the datatypes we use for our data, we moved away from Integers to GUIDs and 
 varchar datatypes for our data that is highly associated within the platform.
+- We have started moving towards providing Jupyter notebooks for common activities 
+related to data loading, they can be located in the SQL directory.
 
 # Loading Order
 The following is the intended loading order, we have also prefixed the names of the 
