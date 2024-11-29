@@ -26,7 +26,8 @@ The following section cover the order of files to be loaded.
 `
 
 ## DataTier
-
+These will need to be enhanced based on all the work done to revise
+and overhaul the datamodel in November 2024. However, this is the order.
 `
 ./InsertScripts-CSV/4-Datatier-1-DataTier.sql
 `
