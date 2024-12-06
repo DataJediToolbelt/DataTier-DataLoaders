@@ -225,13 +225,16 @@ INSERT INTO refdata_legalentities (legalentity_guid, location_name, address, cit
     ;
 
 INSERT INTO refdata_operationtypes (operationtype_id, operationtype_name, created_date, status_id) VALUES
+     ('==','Equal To','2020-07-28 00:25:23.000','Active'),
 	 ('!=','Not Equal To','2020-07-28 00:25:23.000','Active'),
 	 ('<','Less Than','2020-07-28 00:25:23.000','Active'),
 	 ('<=','Less Than or Equal To','2020-07-28 00:25:23.000','Active'),
 	 ('>','Greater Than','2020-07-28 00:25:23.000','Active'),
 	 ('>=','Greater Than or Equal To','2020-07-28 00:25:23.000','Active'),
-	 ('CONTAIN','Contains','2020-07-28 00:25:23.000','Active'),
+	 ('CONTAINS','Contains','2020-07-28 00:25:23.000','Active'),
 	 ('STARTS','Starts with','2020-07-28 00:25:23.000','Active'),
+	 ('ENDS','Ends with','2020-07-28 00:25:23.000','Active'),
+	 ('SUBSTR','Substring','2020-07-28 00:25:23.000','Active'),
 	 ('MIN','Minimum Value','2022-05-28 05:41:33.108','Active'),
 	 ('MAX','Maximum Value','2022-05-28 05:41:33.108','Active'),
 	 ('MEDIAN','Median Value','2022-05-28 05:41:33.108','Active'),

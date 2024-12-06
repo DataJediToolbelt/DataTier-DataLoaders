@@ -10,6 +10,7 @@ update refdata_devicetypes set created_date = DATETIME('NOW', 'LOCALTIME') where
 update refdata_industries set created_date = DATETIME('NOW', 'LOCALTIME') where STATUS_ID is not null;
 update refdata_industries_business set created_date = DATETIME('NOW', 'LOCALTIME') where STATUS_ID is not null;
 update refdata_legalentities set created_date = DATETIME('NOW', 'LOCALTIME') where STATUS_ID is not null;
+update refdata_operationtypes set created_date = DATETIME('NOW', 'LOCALTIME') where STATUS_ID is not null;
 update refdata_organizations set created_date = DATETIME('NOW', 'LOCALTIME') where STATUS_ID is not null;
 update refdata_terminologystds set created_date = DATETIME('NOW', 'LOCALTIME') where STATUS_ID is not null;
 update refdata_dataattributes set created_date = DATETIME('NOW', 'LOCALTIME') where STATUS_ID is not null;

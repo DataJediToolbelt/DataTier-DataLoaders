@@ -10,6 +10,7 @@ update refdata_devicetypes set created_date = CURRENT_TIMESTAMP where status_id 
 update refdata_industries set created_date = CURRENT_TIMESTAMP where status_id is not NULL;
 update refdata_industries_business set created_date = CURRENT_TIMESTAMP where status_id is not NULL;
 update refdata_legalentities set created_date = CURRENT_TIMESTAMP where status_id is not NULL;
+update refdata_operationtypes set created_date = CURRENT_TIMESTAMP where status_id is not NULL;
 update refdata_organizations set created_date = CURRENT_TIMESTAMP where status_id is not NULL;
 update refdata_terminologystds set created_date = CURRENT_TIMESTAMP where status_id is not NULL;
 update refdata_dataattributes set created_date = CURRENT_TIMESTAMP where status_id is not NULL;
