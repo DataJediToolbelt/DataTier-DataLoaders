@@ -1,4 +1,4 @@
-INSERT INTO platform_datageneration_dataattributes (datagentype_id, datagentype_description, definition, dataattribute_id, created_date, status_id, created_user, quantity, maxrecords_in_source, organization_guid, registeredapp_guid) VALUES
+INSERT INTO platform_datageneration_dataattributes (datagentype_id, datagentype_description, definition, dataattribute_id, maintained_date, status_id, created_user, quantity, maxrecords_in_source, organization_guid, registeredapp_guid) VALUES
      ('97b13601-053c-4171-bfbe-42662f3abebf','Master','^5[1-5][0-9]{14}$','a0b7c079-3cd6-4447-97ed-4419652145d3  ','2021-05-24 19:48:20','Active','platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 ('b295aa48-385e-4929-92c5-12327b00309b','Visa','^4[0-9]{12}(?:[0-9]{3})?$','a0b7c079-3cd6-4447-97ed-4419652145d3  ','2021-05-24 19:48:20','Active','platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
 	 ('c6ed36a6-3154-4123-a396-77248f1c69ed','Discover','^65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})$','a0b7c079-3cd6-4447-97ed-4419652145d3  ','2021-05-24 19:48:20','Active','platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a '),
@@ -60,7 +60,7 @@ INSERT INTO platform_datageneration_dataattributes (datagentype_id, datagentype_
 	 ('6a53b05c-055b-49bd-9167-a2aa0caa7b05','Cadeceus','^[%#@&]{1}[A-Z]{3}[%#@&]{1}[0-9]{1}[A-Z]{2}$','820c0ed7-7e04-41b7-b87e-906f4f926630 ','2021-05-24 19:48:21','Active','platformusr',5000,250000,'daf0ace4-d09a-11ea-9579-bba61161b25a','16a17a48-d09b-11ea-9579-bba61161b25a ')
 ;
 
-INSERT INTO platform_datastructures_dtl (platform_datastructuresdtl_id, datastructure_id, composite_datastructure_name, sensitivityflag_id, created_date, status_id, created_user, registeredapp_guid, dataattribute_id)
+INSERT INTO platform_datastructures_dtl (platform_datastructuresdtl_id, datastructure_id, composite_datastructure_name, sensitivityflag_id, maintained_date, status_id, created_user, registeredapp_guid, dataattribute_id)
 VALUES ('0051fccc-26ce-4020-9181-eb5f34248707','a4b4242c-0b2c-46ac-bfca-8d2932cca6d3',NULL,'PII','2021-03-29 11:41:11.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','0aab5e78-5a12-462c-9226-606a2f8482bf '),
        ('9c3d043f-3e28-4122-abc9-632f260d2f57','a4b4242c-0b2c-46ac-bfca-8d2932cca6d3',NULL,'PII','2021-03-29 11:41:11.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','cbf2f975-a62f-4f8c-8031-b54a01d2e153 '),
        ('7d608c7c-d92f-4058-9940-6b1830e9964c','c0d1c58b-3a37-4688-b069-02b63aab38d3',NULL,'PII','2021-03-29 11:44:41.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','e4c3cb42-ff0d-4692-b9e3-5976b229be39 '),

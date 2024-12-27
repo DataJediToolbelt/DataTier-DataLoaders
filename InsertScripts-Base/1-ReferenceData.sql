@@ -1,11 +1,11 @@
-INSERT INTO refdata_status(status_id, status_description, created_date, created_user) VALUES
+INSERT INTO refdata_status(status_id, status_description, maintained_date, created_user) VALUES
     ('Active','Active','2020-07-21 01:12:51.0',NULL)
     ,('Inactive','Inactive','2020-07-21 01:12:51.0',NULL)
     ,('Archived','Archived','2020-07-21 01:12:51.0',NULL)
     ,('UNDF','Undefined','2020-07-21 01:12:51.0',NULL)
 ;
 
-INSERT INTO refdata_timezones (timezone_id, timezone_desc, created_date, status_id) VALUES
+INSERT INTO refdata_timezones (timezone_id, timezone_desc, maintained_date, status_id) VALUES
     ('CST','Central Timezone','2020-07-21 01:18:34.0','Active')
     ,('EST','Eastern Timezone','2020-07-21 01:18:34.0','Active')
     ,('MST','Mountain Timezone','2020-07-21 01:18:34.0','Active')
@@ -13,7 +13,7 @@ INSERT INTO refdata_timezones (timezone_id, timezone_desc, created_date, status_
     ,('UNK','Unknown','2020-07-21 01:18:34.0','Active')
 ;
 
-INSERT INTO refdata_usstates (state_id, state_description, lattitude, longitude, created_date, status_id, created_user) VALUES
+INSERT INTO refdata_usstates (state_id, state_description, lattitude, longitude, maintained_date, status_id, created_user) VALUES
     ('AK','Alaska','63.588753','-154.493062','2020-07-28 01:33:31.0','Active',NULL)
     ,('AL','Alabama','32.318231','-86.902298','2020-07-28 01:33:31.0','Active',NULL)
     ,('AR','Arkansas','35.20105','-91.831833','2020-07-28 01:33:31.0','Active',NULL)
@@ -68,12 +68,12 @@ INSERT INTO refdata_usstates (state_id, state_description, lattitude, longitude,
     ,('WY','Wyoming','43.075968','-107.290284','2020-07-28 01:33:31.0','Active',NULL)
 ;
 
-INSERT INTO refdata_vendors (vendor_id, vendor_name, created_date, status_id, created_user) VALUES
+INSERT INTO refdata_vendors (vendor_id, vendor_name, maintained_date, status_id, created_user) VALUES
     ('d04ac95d-b26e-401f-a740-f19ce3d486f0','Synthetic Open Source Comm','2020-07-28 01:25:00.0','Active',NULL)
     ,('f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','Undefined Vendor','2024-09-08 01:25:00.0','Active',NULL)
 ;
 
-INSERT INTO refdata_industrystds (industry_std, industrystd_desc, created_date, status_id) VALUES
+INSERT INTO refdata_industrystds (industry_std, industrystd_desc, maintained_date, status_id) VALUES
     ('EDI','EDI','2020-07-28 00:33:40.0','Active')
     ,('FHIR','HL7 FHIR','2020-07-28 00:33:40.0','Active')
     ,('HL7','HL7 v2','2020-07-28 00:33:40.0','Active')
@@ -81,7 +81,7 @@ INSERT INTO refdata_industrystds (industry_std, industrystd_desc, created_date, 
     ,('UNDF','Undefined','2020-07-28 00:33:40.0','Active')
 ;
 
-INSERT INTO refdata_sensitivityflags (sensitivityflag_id, sensitivityflag_desc, created_date, status_id) VALUES
+INSERT INTO refdata_sensitivityflags (sensitivityflag_id, sensitivityflag_desc, maintained_date, status_id) VALUES
     ('UNDF','Undefined','2020-07-28 00:22:11.0','Active')
     ,('PHI','Personal Health Information','2020-07-28 00:22:11.0','Active')
     ,('PII','Personally Identifiable Information','2020-07-28 00:22:11.0','Active')
@@ -90,7 +90,7 @@ INSERT INTO refdata_sensitivityflags (sensitivityflag_id, sensitivityflag_desc, 
     ,('UNK','Unknown','2020-07-28 00:22:11.0','Active')
 ;
 
-INSERT INTO refdata_codesets (codesets_id,codeset_name, industry_std, status_id, created_date, created_user, field_mapping, sensitivityflag_id, externaltable_id, external_notes, external_link) VALUES
+INSERT INTO refdata_codesets (codesets_id,codeset_name, industry_std, status_id, maintained_date, created_user, field_mapping, sensitivityflag_id, externaltable_id, external_notes, external_link) VALUES
        ('c7a8de68-46bc-4148-bc73-efa6f16073d2','Race','HL7','Active','2020-07-28 02:04:43',NULL,'PID.10','REF',NULL,NULL,NULL),
        ('86ef92e7-0838-482a-807e-7309cf092b02','Language','HL7','Active','2020-07-28 02:04:43',NULL,'PID.15','REF',NULL,NULL,NULL),
        ('4fd9b290-4b81-461c-834e-6bbbbea96be9','Marital Status','HL7','Active','2020-07-28 02:04:43',NULL,'PID.16','REF',NULL,NULL,NULL),
@@ -169,7 +169,7 @@ INSERT INTO refdata_codesets (codesets_id,codeset_name, industry_std, status_id,
 ;
 
 INSERT INTO refdata_applications
-    (app_guid, application_customcode, application_desc, created_user, created_date, status_id, vendor_id, industry_oid, organization_guid) VALUES
+    (app_guid, application_customcode, application_desc, created_user, maintained_date, status_id, vendor_id, industry_oid, organization_guid) VALUES
     ('16a17a48-d09b-11ea-9579-bba61161b25a  ','SDP','Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000','Active','d04ac95d-b26e-401f-a740-f19ce3d486f0',NULL,NULL),
     ('a7d17ac2-fcb7-11eb-a889-168500abc6d9  ','UNDF','Undefined App',NULL,'2021-08-14 04:25:28.000','Active','f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
     ('639ea3bc-d72a-11ea-b0b4-aa403f7fbe39  ','MedHost','MedHost',NULL,'2020-08-05 09:46:04.000','Active','f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.530',NULL),
@@ -193,7 +193,7 @@ INSERT INTO refdata_applications
     ('5dcac5b7-ef29-4cb7-bbc8-63c4b4b7a59a  ','ADP','ADP','NULL','2022-05-29 05:17:02.538','Active','f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL)
 ;
 
-INSERT INTO refdata_devicetypes (devicetype_id, devicetype, created_date, status_id) VALUES
+INSERT INTO refdata_devicetypes (devicetype_id, devicetype, maintained_date, status_id) VALUES
 	 ('bdaad054-fbb8-43a7-bd46-f3b5510f0eed','Watch','2022-01-29 06:23:44.585','Active'),
 	 ('d7884dee-4ec6-460a-b834-f1cabdb36d0c','Phone','2022-01-29 06:23:44.585','Active'),
 	 ('218201bb-ca35-4552-b7e3-499ca7818de6','Blood Pressure Cuff','2022-01-29 06:23:44.585','Active'),
@@ -203,7 +203,7 @@ INSERT INTO refdata_devicetypes (devicetype_id, devicetype, created_date, status
 	 ('7c34eb0d-7c47-451e-9aae-f665611da221','Pulse Ox','2022-01-29 06:23:44.585','Active')
      ;
 
-INSERT INTO refdata_industries (industry_id, industry_name, created_date, status_id) VALUES
+INSERT INTO refdata_industries (industry_id, industry_name, maintained_date, status_id) VALUES
 	 ('f4aff948-c669-4174-8770-538a5e66bbaf','Healthcare','2022-01-29 05:59:50.287','Active'),
 	 ('b6ca8e0c-a4c1-4088-b018-f49237f4e079','Manufacturing','2022-01-29 05:59:50.287','Active'),
 	 ('cf0af9b7-32ec-4a89-bca9-82fa773137f1','Telco','2022-01-29 05:59:50.287','Active'),
@@ -213,18 +213,18 @@ INSERT INTO refdata_industries (industry_id, industry_name, created_date, status
      ('6ebb59f6-6eb1-4c6b-aad6-6b2531691f09','Undefined','2024-09-06 06:24:27.892','Active')
      ;
 
-INSERT INTO refdata_industries_business (industrytobusiness_id, industry_id, business_area, created_date, status_id) VALUES
+INSERT INTO refdata_industries_business (industrytobusiness_id, industry_id, business_area, maintained_date, status_id) VALUES
 	 ('c288ac6b-ba4e-4c18-bc93-4375a00bb1ed','f4aff948-c669-4174-8770-538a5e66bbaf','Clinical Care','2022-01-29 06:14:19.888','Active'),
 	 ('7644d244-fab3-41a9-8116-39703346b393','f4aff948-c669-4174-8770-538a5e66bbaf','Claims','2022-01-29 06:14:19.888','Active'),
 	 ('acee6fb3-bfc8-4101-b0be-c1eac13da415','f4aff948-c669-4174-8770-538a5e66bbaf','Emergency Care','2022-01-29 06:14:19.888','Active'),
 	 ('9b494a41-07ea-4b28-b743-4cdec6ea07f4','f4aff948-c669-4174-8770-538a5e66bbaf','Surgeries','2022-01-29 06:14:19.888','Active')
      ;
 
-INSERT INTO refdata_legalentities (legalentity_guid, location_name, address, city, state_id, zipcode, created_user, status_id, created_date, location_url, location_phone) VALUES
+INSERT INTO refdata_legalentities (legalentity_guid, location_name, address, city, state_id, zipcode, created_user, status_id, maintained_date, location_url, location_phone) VALUES
     ('7ae3b73b-05d4-11ec-a889-168500abc6d9','Sample Company',NULL,NULL,'TN',NULL,NULL,'Active','2021-08-25 18:44:29',NULL,NULL)
     ;
 
-INSERT INTO refdata_operationtypes (operationtype_id, operationtype_name, created_date, status_id) VALUES
+INSERT INTO refdata_operationtypes (operationtype_id, operationtype_name, maintained_date, status_id) VALUES
      ('==','Equal To','2020-07-28 00:25:23.000','Active'),
 	 ('!=','Not Equal To','2020-07-28 00:25:23.000','Active'),
 	 ('<','Less Than','2020-07-28 00:25:23.000','Active'),
@@ -242,7 +242,7 @@ INSERT INTO refdata_operationtypes (operationtype_id, operationtype_name, create
 	 ('MINLNGT','Minimum Length','2022-05-28 05:41:33.108','Active')
      ;
 
-INSERT INTO refdata_organizations (organization_guid, organization_internal_code, organization_internal_id, organization_name, address, city, state_id, zipcode, created_user, status_id, created_date, legalentity_guid) VALUES
+INSERT INTO refdata_organizations (organization_guid, organization_internal_code, organization_internal_id, organization_name, address, city, state_id, zipcode, created_user, status_id, maintained_date, legalentity_guid) VALUES
 	  ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','DEMO','DEMO','Demonstration - Organization','101 Healthcare Way','Franklin','TN','37067',NULL,'Active','2020-08-05 09:43:27',NULL),
 	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','TestOrg.','TORG','Test Organization','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,'Active','2020-08-05 09:43:27',NULL),
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,'Active','2020-07-28 01:23:30',NULL)
@@ -467,7 +467,7 @@ values
     ('WHOSPA', '1999AA', 'WHOART Spanish')
 ;
 
-INSERT INTO refdata_datastructures (datastructure_id, datastructure_name, sensitivityflag_id, created_date, status_id, created_user, registeredapp_guid) VALUES
+INSERT INTO refdata_datastructures (datastructure_id, datastructure_name, sensitivityflag_id, maintained_date, status_id, created_user, registeredapp_guid) VALUES
       ('a4b4242c-0b2c-46ac-bfca-8d2932cca6d3','Person Demographics','PHI','2021-03-29 11:23:43.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  '),
       ('c0d1c58b-3a37-4688-b069-02b63aab38d3','Bank Account','PHI','2021-03-29 11:33:12.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  '),
       ('a2ae523e-61c5-43af-8039-e20c06d1d1f3','US Phone Number','PII','2021-03-29 11:33:12.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  '),
@@ -475,7 +475,7 @@ INSERT INTO refdata_datastructures (datastructure_id, datastructure_name, sensit
       ('036793fb-7038-452c-8aca-e77f341faaea','US Address','PII','2021-03-29 11:33:12.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ')
 ;
 
-INSERT INTO refdata_dataattributes (dataattribute_id, dataattribute_name, sensitivityflag_id, created_date, status_id, created_user, registeredapp_guid, attribute_type) VALUES
+INSERT INTO refdata_dataattributes (dataattribute_id, dataattribute_name, sensitivityflag_id, maintained_date, status_id, created_user, registeredapp_guid, attribute_type) VALUES
       ('0aab5e78-5a12-462c-9226-606a2f8482bf','Names - Last','PII','2020-08-04 21:51:36.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Upsert'),
       ('9315b38d-bac2-44b4-b661-65b785b01b3d','Area Code','PII','2020-08-04 21:51:36.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','As-Is'),
       ('e4e1fcff-bea2-4db9-b328-9082e55c7cac','Address','PII','2020-08-04 21:51:36.000','Active',NULL,'16a17a48-d09b-11ea-9579-bba61161b25a  ','Generator'),
