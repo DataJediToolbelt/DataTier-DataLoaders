@@ -170,7 +170,7 @@ INSERT INTO refdata_codesets (codesets_id,codeset_name, industry_std, status_id,
 
 INSERT INTO refdata_applications
     (app_guid, application_customcode, application_desc, created_user, maintained_date, status_id, vendor_id, industry_oid, organization_guid) VALUES
-    ('16a17a48-d09b-11ea-9579-bba61161b25a  ','SDP','Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000','Active','d04ac95d-b26e-401f-a740-f19ce3d486f0',NULL,NULL),
+    ('16a17a48-d09b-11ea-9579-bba61161b25a  ','DJTB-SDP','Data Jedi ToolBelt - Synthetic Data Platform',NULL,'2020-07-28 01:25:10.000','Active','d04ac95d-b26e-401f-a740-f19ce3d486f0',NULL,NULL),
     ('a7d17ac2-fcb7-11eb-a889-168500abc6d9  ','UNDF','Undefined App',NULL,'2021-08-14 04:25:28.000','Active','f5c07f58-b6d6-42fc-a3c5-f7383ea732bc',NULL,NULL),
     ('639ea3bc-d72a-11ea-b0b4-aa403f7fbe39  ','MedHost','MedHost',NULL,'2020-08-05 09:46:04.000','Active','f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','2.16.840.1.113883.3.530',NULL),
     ('639de2e2-d72a-11ea-b0b4-aa403f7fbe39  ','EpicHC','Epic',NULL,'2020-08-05 09:46:04.000','Active','f5c07f58-b6d6-42fc-a3c5-f7383ea732bc','1.2.840.1.114350',NULL),
@@ -243,7 +243,7 @@ INSERT INTO refdata_operationtypes (operationtype_id, operationtype_name, mainta
      ;
 
 INSERT INTO refdata_organizations (organization_guid, organization_internal_code, organization_internal_id, organization_name, address, city, state_id, zipcode, created_user, status_id, maintained_date, legalentity_guid) VALUES
-	  ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','DEMO','DEMO','Demonstration - Organization','101 Healthcare Way','Franklin','TN','37067',NULL,'Active','2020-08-05 09:43:27',NULL),
+	 ('05e10cec-d72a-11ea-b0b4-aa403f7fbe39','DataJediTK','DataJediTK','Data Jedi ToolBelt - Organization','Data Lane','Franklin','TN','37067',NULL,'Active','2020-08-05 09:43:27',NULL),
 	 ('05e9c6f2-d72a-11ea-b0b4-aa403f7fbe39','TestOrg.','TORG','Test Organization','1 Emergency Room Rd','Spring Hill','TN','37074',NULL,'Active','2020-08-05 09:43:27',NULL),
 	 ('daf0ace4-d09a-11ea-9579-bba61161b25a','UNDF','UNDF','Undefined Organization Name',NULL,NULL,NULL,NULL,NULL,'Active','2020-07-28 01:23:30',NULL)
      ;
