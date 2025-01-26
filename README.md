@@ -39,10 +39,10 @@ related to data loading, they can be located in the SQL directory.
 The following is the intended loading order, we have also prefixed the names of the 
 specific loader file with a number to try and ensure clarity.
 
-| File  Name                                               | 
-|----------------------------------------------------------|
-| .InsertScripts-Base/Platform-DataLoad-Base.sql           | 
-| ./InsertScripts-Base/datatier_sdp_dataattributes-{Number}.sql |
+| File  Name                               | 
+|------------------------------------------|
+| Platform-DataLoad-Base.sql               | 
+| Datatier_sdp_dataattributes-{Number}.sql |
 
 # DataTier Loader Stats
 The reference data loaders will load general platform data that supports many functions. 
@@ -50,20 +50,19 @@ However, by far the most widely downloaded and adopted data files within this re
 are the data tier files. These files if fully loaded have 1,5M plus records representing 19 
 different data attributes.
 
-| File  Name | Expected Records | 
-|--------|------------------|
-| datatier_sdp_dataattributes-01.sql | 126,817          |
-| datatier_sdp_dataattributes-02.sql | 134,896          |
-| datatier_sdp_dataattributes-03.sql | 134,496          |
-| datatier_sdp_dataattributes-04.sql | 131,816          |
-| datatier_sdp_dataattributes-05.sql | 131,911          |
-| datatier_sdp_dataattributes-06.sql | 131,929          |
-| datatier_sdp_dataattributes-07.sql | 131,820          |
-| datatier_sdp_dataattributes-08.sql | 128,299          |
-| datatier_sdp_dataattributes-09.sql | 133,007          |
-| datatier_sdp_dataattributes-10.sql | 135,999          |
-| datatier_sdp_dataattributes-11.sql | 136,635          |
-
+| File  Name                         | Expected Records | 
+|------------------------------------|------------------|
+| Datatier_sdp_dataattributes-01.sql | 126,817          |
+| Datatier_sdp_dataattributes-02.sql | 134,896          |
+| Datatier_sdp_dataattributes-03.sql | 134,496          |
+| Datatier_sdp_dataattributes-04.sql | 131,816          |
+| Datatier_sdp_dataattributes-05.sql | 131,911          |
+| Datatier_sdp_dataattributes-06.sql | 131,929          |
+| Datatier_sdp_dataattributes-07.sql | 131,820          |
+| Datatier_sdp_dataattributes-08.sql | 128,299          |
+| Datatier_sdp_dataattributes-09.sql | 133,007          |
+| Datatier_sdp_dataattributes-10.sql | 135,999          |
+| Datatier_sdp_dataattributes-11.sql | 136,635          |
 
 # Postgresql
 Postgresql is a powerful widely adopted open source database with extensive capabilities. 
