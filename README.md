@@ -20,7 +20,6 @@ the  /InsertScript-Base directory as the base location for loading data tiers.
 | Directory            | Details                                                                                                                                                   | 
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | InsertScripts-Base   | Standard SQL Insert scripts to seed database, there is a README.md in this directory with some helpful database commands and details if needed.           |
-| InsertScripts-CSV    | These are CSV scripts than have been used with Snowflake and SPARK. However, for them to work the tables must be implemented as is or they will not work. |
 | SQL                  | Jupyter notebooks of key platform queries or technology statements that might be beneficial. |
 
 As of November 2024 we undertook a series of work to simplify the data model and then in parallel
@@ -40,33 +39,30 @@ related to data loading, they can be located in the SQL directory.
 The following is the intended loading order, we have also prefixed the names of the 
 specific loader file with a number to try and ensure clarity.
 
-| File  Name                                                     | 
-|----------------------------------------------------------------|
-| ./InsertScripts-Base/1-ReferenceData.sql                       | 
-| ./InsertScripts-Base/2-DatamodelData.sql                       | 
-| ./InsertScripts-Base/3-PlatformData.sql                        |
-| /InsertScripts-Base/4-Datatier-SDP-DataAttributes-{Number}.sql |
+| File  Name                                               | 
+|----------------------------------------------------------|
+| .InsertScripts-Base/Platform-DataLoad-Base.sql           | 
+| ./InsertScripts-Base/datatier_sdp_dataattributes-{Number}.sql |
 
 # DataTier Loader Stats
 The reference data loaders will load general platform data that supports many functions. 
 However, by far the most widely downloaded and adopted data files within this repository 
-are the data tier files. These files if fully loaded have 1,583,197 records representing 19 
+are the data tier files. These files if fully loaded have 1,5M plus records representing 19 
 different data attributes.
 
-| File  Name                           | Expected Records | 
-|--------------------------------------|------------------|
-| 4-DataTier-SDP-DataAttributes_1.sql  | 126,817          |
-| 4-DataTier-SDP-DataAttributes_2.sql  | 134,896          |
-| 4-DataTier-SDP-DataAttributes_3.sql  | 134,496          |
-| 4-DataTier-SDP-DataAttributes_4.sql  | 131,816          |
-| 4-DataTier-SDP-DataAttributes_5.sql  | 131,911          |
-| 4-DataTier-SDP-DataAttributes_6.sql  | 131,929          |
-| 4-DataTier-SDP-DataAttributes_7.sql  | 131,820          |
-| 4-DataTier-SDP-DataAttributes_8.sql  | 128,299          |
-| 4-DataTier-SDP-DataAttributes_9.sql  | 133,007          |
-| 4-DataTier-SDP-DataAttributes_10.sql | 135,999          |
-| 4-DataTier-SDP-DataAttributes_11.sql | 136,635          |
-|4-DataTier-SDP-DataAttributes_12.sql| 125,572          |
+| File  Name | Expected Records | 
+|--------|------------------|
+| datatier_sdp_dataattributes-01.sql | 126,817          |
+| datatier_sdp_dataattributes-02.sql | 134,896          |
+| datatier_sdp_dataattributes-03.sql | 134,496          |
+| datatier_sdp_dataattributes-04.sql | 131,816          |
+| datatier_sdp_dataattributes-05.sql | 131,911          |
+| datatier_sdp_dataattributes-06.sql | 131,929          |
+| datatier_sdp_dataattributes-07.sql | 131,820          |
+| datatier_sdp_dataattributes-08.sql | 128,299          |
+| datatier_sdp_dataattributes-09.sql | 133,007          |
+| datatier_sdp_dataattributes-10.sql | 135,999          |
+| datatier_sdp_dataattributes-11.sql | 136,635          |
 
 
 # Postgresql
@@ -109,3 +105,17 @@ Based on a Postgresql 16 install:
 
 
 Happy coding!!!
+
+# Running the Jupyter Notebooks Provided
+
+We are moving towards wider adoption of Jupyter notebooks in our platform. This
+will be an evolution for us but is definitely the right direction we believe.
+
+To Run Jupyter notebooks depends on many factors. 
+
+
+1.  Set up python and run through a series of configurations and installs. Then use 
+commands like: python -m notebook and attach to notebooks.
+2. Use a Python Development IDE like PyCharm or VS Code and install Python
+and all the libraries
+3. Use a Python IDE and install Anaconda and take the easy path.
