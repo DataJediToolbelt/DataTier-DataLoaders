@@ -37,7 +37,9 @@ related to data loading, they can be located in the SQL directory.
 
 # Loading Order
 The following is the intended loading order, we have also prefixed the names of the 
-specific loader file with a number to try and ensure clarity.
+specific loader file with a number to try and ensure clarity. These files are within the 
+InsertScripts-Base and possibly a sudirectory in the directory (just depends on the current activities 
+going on).
 
 | File  Name                               | 
 |------------------------------------------|
